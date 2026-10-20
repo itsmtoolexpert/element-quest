@@ -1,11 +1,13 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { RefreshCw } from "lucide-react";
+import { useEffect } from "react";
 import { Navigate, Route, Routes } from "react-router";
 
-import { api, ApiError } from "./api";
+import { api, ApiError, SIGNED_OUT_EVENT } from "./api";
 import ConnectionBanner from "./components/ConnectionBanner";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
+import { signOutLocally } from "./lib/session";
 
 export function useMe() {
   return useQuery({
@@ -21,6 +23,15 @@ export function useMe() {
 
 export default function App() {
   const me = useMe();
+  const qc = useQueryClient();
+
+  // Any request refused with "not signed in" (session expired, account turned off) → back to sign-in.
+  useEffect(() => {
+    const onSignedOut = () => { if (qc.getQueryData(["me"])) signOutLocally(qc); };
+    window.addEventListener(SIGNED_OUT_EVENT, onSignedOut);
+    return () => window.removeEventListener(SIGNED_OUT_EVENT, onSignedOut);
+  }, [qc]);
+
   if (me.isPending) return <Splash />;
   if (me.isError && me.data === undefined) {
     return <Splash offline onRetry={() => me.refetch()} />;

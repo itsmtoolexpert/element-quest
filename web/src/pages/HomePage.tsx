@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NavLink, Route, Routes } from "react-router";
 
 import { api, type User } from "../api";
+import { signOutLocally } from "../lib/session";
 import Avatar from "../components/Avatar";
 import PasswordDialog from "../components/PasswordDialog";
 import DashboardPage from "./admin/DashboardPage";
@@ -22,11 +23,7 @@ export default function HomePage({ user }: { user: User }) {
 
   const logout = useMutation({
     mutationFn: api.logout,
-    onSuccess: () => {
-      qc.clear();
-      qc.setQueryData(["me"], null);
-      if ("caches" in window) caches.delete("eq-session").catch(() => {});
-    },
+    onSuccess: () => signOutLocally(qc),
   });
   const due = stats.data?.due_today ?? 0;
 

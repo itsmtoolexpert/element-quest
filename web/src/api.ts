@@ -79,6 +79,10 @@ export class ApiError extends Error {
   constructor(public status: number, message: string) { super(message); }
 }
 
+/** Fired on window when the server says this device is no longer signed in (e.g. the session expired). */
+export const SIGNED_OUT_EVENT = "eq:signed-out";
+const AUTH_PATHS = ["/api/auth/login", "/api/auth/password", "/api/auth/me"];
+
 /** Fired on window when the server stops or starts answering, so the app can show a banner. */
 export const CONNECTION_EVENT = "eq:connection";
 let lastOnline = true;
@@ -106,6 +110,9 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
     throw new ApiError(res.status, "Element Quest is starting up or the laptop is busy. Try again in a moment.");
   }
   setOnline(true);
+  if (res.status === 401 && !AUTH_PATHS.some((p) => path.startsWith(p))) {
+    window.dispatchEvent(new Event(SIGNED_OUT_EVENT));
+  }
   if (!res.ok) {
     let msg = res.statusText;
     try {

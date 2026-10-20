@@ -1,6 +1,10 @@
 # Element Quest: run with  docker compose up -d --build
 # Then open http://localhost:8080 (or http://<your-mac-name>.local:8080 from phones on the same Wi-Fi).
 
+# A fixed project name, so the database volume keeps the same name (element-quest_db-data)
+# whatever the folder is called.
+name: element-quest
+
 services:
   db:
     image: postgres:17-alpine

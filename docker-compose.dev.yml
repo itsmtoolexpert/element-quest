@@ -1,0 +1,25 @@
+# Development overrides: hot reload for UI and API.
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+# UI: http://localhost:5173   API docs: http://localhost:5173/api/docs
+
+services:
+  api:
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    volumes:
+      - ./api:/app
+
+  web:
+    image: node:22-alpine
+    build: !reset null
+    working_dir: /app
+    command: sh -c "npm ci --no-audit --no-fund && npm run dev"
+    environment:
+      API_URL: http://api:8000
+    ports: !override
+      - "5173:5173"
+    volumes:
+      - ./web:/app
+      - web-node-modules:/app/node_modules
+
+volumes:
+  web-node-modules:

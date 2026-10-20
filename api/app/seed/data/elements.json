@@ -1,0 +1,3841 @@
+[
+ {
+  "number": 1,
+  "symbol": "H",
+  "name": "Hydrogen",
+  "mass": "1.008",
+  "mass_is_estimate": false,
+  "family": "nm",
+  "group": 1,
+  "period": 1,
+  "block": "s",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "1s¹",
+  "shells": [
+   1
+  ],
+  "valence_electrons": 1,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Fuel of the Sun and stars; part of every water molecule",
+   "go_deeper": "About three-quarters of the normal matter in the universe is hydrogen. Inside the Sun, hydrogen nuclei smash together and fuse into helium, releasing the energy that becomes sunlight.",
+   "try_it": "Every glass of water (H₂O) holds two hydrogen atoms for every oxygen atom: roughly 10²⁵ hydrogen atoms in a single glass.",
+   "featured": true,
+   "check_question": {
+    "question": "What does the Sun fuse hydrogen into?",
+    "correct": "Helium",
+    "wrong": [
+     "Carbon",
+     "Oxygen",
+     "Iron"
+    ],
+    "explanation": "Fusion joins hydrogen nuclei into helium, and a little mass becomes a lot of energy (E = mc²)."
+   }
+  }
+ },
+ {
+  "number": 2,
+  "symbol": "He",
+  "name": "Helium",
+  "mass": "4.0026",
+  "mass_is_estimate": false,
+  "family": "ng",
+  "group": 18,
+  "period": 1,
+  "block": "s",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "1s²",
+  "shells": [
+   2
+  ],
+  "valence_electrons": 2,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Party balloons and cooling the giant magnets in MRI scanners",
+   "go_deeper": "Helium was first spotted in the Sun's light in 1868, before anyone found it on Earth. It's so light it can escape our atmosphere, so we get it from natural gas wells.",
+   "try_it": "Compare a helium balloon and an air-filled one over two days. Tiny helium atoms leak through the rubber much faster.",
+   "featured": true,
+   "check_question": {
+    "question": "Why does a helium balloon float?",
+    "correct": "Helium is less dense than air",
+    "wrong": [
+     "Helium is magnetic",
+     "Helium is warmer than air",
+     "Helium cancels gravity"
+    ],
+    "explanation": "Less dense gas means the balloon weighs less than the air it pushes aside, so it rises."
+   }
+  }
+ },
+ {
+  "number": 3,
+  "symbol": "Li",
+  "name": "Lithium",
+  "mass": "6.94",
+  "mass_is_estimate": false,
+  "family": "ak",
+  "group": 1,
+  "period": 2,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[He] 2s¹",
+  "shells": [
+   2,
+   1
+  ],
+  "valence_electrons": 1,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Rechargeable batteries in phones, laptops and electric cars",
+   "go_deeper": "The lightest metal; it's soft enough to cut with a knife. When your phone charges, lithium ions move into one electrode, and they flow back out to power the phone.",
+   "try_it": "Check the label on a phone, laptop or vape battery: it will say 'Li-ion' or 'Li-po'.",
+   "featured": true,
+   "check_question": {
+    "question": "In a lithium-ion battery, what moves back and forth between the electrodes?",
+    "correct": "Lithium ions",
+    "wrong": [
+     "Photons",
+     "Water",
+     "Neutrons"
+    ],
+    "explanation": "Charged lithium atoms (ions) shuttle between electrodes as the battery charges and discharges."
+   }
+  }
+ },
+ {
+  "number": 4,
+  "symbol": "Be",
+  "name": "Beryllium",
+  "mass": "9.0122",
+  "mass_is_estimate": false,
+  "family": "ae",
+  "group": 2,
+  "period": 2,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[He] 2s²",
+  "shells": [
+   2,
+   2
+  ],
+  "valence_electrons": 2,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lightweight, stiff parts in satellites and space telescope mirrors",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 5,
+  "symbol": "B",
+  "name": "Boron",
+  "mass": "10.81",
+  "mass_is_estimate": false,
+  "family": "md",
+  "group": 13,
+  "period": 2,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[He] 2s² 2p¹",
+  "shells": [
+   2,
+   3
+  ],
+  "valence_electrons": 3,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Heat-resistant glass cookware and the borax used to make slime",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 6,
+  "symbol": "C",
+  "name": "Carbon",
+  "mass": "12.011",
+  "mass_is_estimate": false,
+  "family": "nm",
+  "group": 14,
+  "period": 2,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[He] 2s² 2p²",
+  "shells": [
+   2,
+   4
+  ],
+  "valence_electrons": 4,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Every living thing, plus pencil graphite and diamonds",
+   "go_deeper": "Carbon can bond to four other atoms at once and form long chains and rings, so it's the backbone of every living thing. Diamond and graphite are both pure carbon, just arranged differently.",
+   "try_it": "Draw a line with a pencil. You're leaving behind layers of graphite, sheets of carbon atoms that slide off each other.",
+   "featured": true,
+   "check_question": {
+    "question": "Diamond and pencil graphite are both made of...",
+    "correct": "Carbon",
+    "wrong": [
+     "Silicon",
+     "Lead",
+     "Calcium"
+    ],
+    "explanation": "Same element, different structure: diamond is a rigid 3D network, graphite is slippery stacked sheets."
+   }
+  }
+ },
+ {
+  "number": 7,
+  "symbol": "N",
+  "name": "Nitrogen",
+  "mass": "14.007",
+  "mass_is_estimate": false,
+  "family": "nm",
+  "group": 15,
+  "period": 2,
+  "block": "p",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "[He] 2s² 2p³",
+  "shells": [
+   2,
+   5
+  ],
+  "valence_electrons": 5,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "78% of the air you breathe; fertilizer; the gas that puffs up chip bags",
+   "go_deeper": "Nitrogen is 78% of air, but N₂ is so stable that plants can't use it directly. Factories turn it into ammonia fertilizer, which helps grow food for about half the world's people.",
+   "try_it": "Squeeze a bag of chips: the cushion inside is nitrogen. It keeps oxygen out so the chips don't go stale.",
+   "featured": true,
+   "check_question": {
+    "question": "About what percent of air is nitrogen?",
+    "correct": "78%",
+    "wrong": [
+     "21%",
+     "50%",
+     "1%"
+    ],
+    "explanation": "Nitrogen ~78%, oxygen ~21%, argon ~1%, plus a little carbon dioxide."
+   }
+  }
+ },
+ {
+  "number": 8,
+  "symbol": "O",
+  "name": "Oxygen",
+  "mass": "15.999",
+  "mass_is_estimate": false,
+  "family": "nm",
+  "group": 16,
+  "period": 2,
+  "block": "p",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "[He] 2s² 2p⁴",
+  "shells": [
+   2,
+   6
+  ],
+  "valence_electrons": 6,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "21% of the air; you need it to release energy from food",
+   "go_deeper": "Oxygen is 21% of air and about 65% of your body's mass, mostly in water. Fire needs it, and rust is iron slowly combining with it.",
+   "try_it": "With an adult, cover a lit tea candle with a glass jar. The flame dies once it uses up the oxygen inside.",
+   "featured": true,
+   "check_question": {
+    "question": "Which gas do your cells use to release energy from food?",
+    "correct": "Oxygen",
+    "wrong": [
+     "Nitrogen",
+     "Helium",
+     "Carbon dioxide"
+    ],
+    "explanation": "Cellular respiration uses oxygen to break down glucose; you breathe out the carbon dioxide made."
+   }
+  }
+ },
+ {
+  "number": 9,
+  "symbol": "F",
+  "name": "Fluorine",
+  "mass": "18.998",
+  "mass_is_estimate": false,
+  "family": "hl",
+  "group": 17,
+  "period": 2,
+  "block": "p",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "[He] 2s² 2p⁵",
+  "shells": [
+   2,
+   7
+  ],
+  "valence_electrons": 7,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Cavity-fighting toothpaste and nonstick frying pans",
+   "go_deeper": "The most reactive element of all. Fluoride in toothpaste swaps into tooth enamel and makes it harder for acids to dissolve. In nonstick pans, fluorine wraps carbon chains so food can't grip.",
+   "try_it": "Read a toothpaste tube: look for sodium fluoride or stannous fluoride in the active ingredients.",
+   "featured": true,
+   "check_question": {
+    "question": "Why is fluoride added to toothpaste?",
+    "correct": "It makes enamel resist acid",
+    "wrong": [
+     "It whitens teeth",
+     "It adds mint flavor",
+     "It numbs the gums"
+    ],
+    "explanation": "Fluoride forms a tougher mineral in enamel that bacterial acids struggle to dissolve."
+   }
+  }
+ },
+ {
+  "number": 10,
+  "symbol": "Ne",
+  "name": "Neon",
+  "mass": "20.180",
+  "mass_is_estimate": false,
+  "family": "ng",
+  "group": 18,
+  "period": 2,
+  "block": "p",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "[He] 2s² 2p⁶",
+  "shells": [
+   2,
+   8
+  ],
+  "valence_electrons": 8,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Glowing red-orange signs",
+   "go_deeper": "When electricity runs through neon, its electrons jump to higher energy levels, then fall back and give off red-orange light. Every element has its own light 'fingerprint'.",
+   "try_it": "Many 'neon' signs in blue or green actually use other gases or coated tubes. True neon is always red-orange.",
+   "featured": true,
+   "check_question": {
+    "question": "Why does neon glow inside a sign?",
+    "correct": "Excited electrons release light",
+    "wrong": [
+     "It is burning",
+     "It is radioactive",
+     "It reflects sunlight"
+    ],
+    "explanation": "Electrons absorb energy, then release it as light of colors unique to that element."
+   }
+  }
+ },
+ {
+  "number": 11,
+  "symbol": "Na",
+  "name": "Sodium",
+  "mass": "22.990",
+  "mass_is_estimate": false,
+  "family": "ak",
+  "group": 1,
+  "period": 3,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ne] 3s¹",
+  "shells": [
+   2,
+   8,
+   1
+  ],
+  "valence_electrons": 1,
+  "latin_name": "natrium",
+  "content": {
+   "everyday_use": "Table salt and baking soda",
+   "go_deeper": "Pure sodium is a soft metal that fizzes violently in water. Bond it to chlorine, a toxic gas, and you get harmless table salt. Chemistry can completely change properties.",
+   "try_it": "Old orange streetlights got their color from glowing sodium vapor, the same yellow-orange you see when salty water boils over onto a gas flame.",
+   "featured": true,
+   "check_question": {
+    "question": "Table salt is sodium combined with...",
+    "correct": "Chlorine",
+    "wrong": [
+     "Oxygen",
+     "Carbon",
+     "Iron"
+    ],
+    "explanation": "Na + Cl → NaCl: sodium gives its outer electron to chlorine, forming ions that stick together."
+   }
+  }
+ },
+ {
+  "number": 12,
+  "symbol": "Mg",
+  "name": "Magnesium",
+  "mass": "24.305",
+  "mass_is_estimate": false,
+  "family": "ae",
+  "group": 2,
+  "period": 3,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ne] 3s²",
+  "shells": [
+   2,
+   8,
+   2
+  ],
+  "valence_electrons": 2,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Bright white sparks in fireworks and light bike frames",
+   "go_deeper": "Magnesium burns with a dazzling white light, perfect for flares and fireworks. A magnesium atom also sits at the center of every chlorophyll molecule, which lets plants capture sunlight.",
+   "try_it": "Look at a green leaf: each chlorophyll molecule inside has exactly one magnesium atom at its heart.",
+   "featured": true,
+   "check_question": {
+    "question": "Which plant molecule has magnesium at its center?",
+    "correct": "Chlorophyll",
+    "wrong": [
+     "Glucose",
+     "Starch",
+     "Cellulose"
+    ],
+    "explanation": "Without magnesium, plants can't make chlorophyll; their leaves turn yellow."
+   }
+  }
+ },
+ {
+  "number": 13,
+  "symbol": "Al",
+  "name": "Aluminum",
+  "mass": "26.982",
+  "mass_is_estimate": false,
+  "family": "pt",
+  "group": 13,
+  "period": 3,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ne] 3s² 3p¹",
+  "shells": [
+   2,
+   8,
+   3
+  ],
+  "valence_electrons": 3,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Soda cans, foil and airplane bodies",
+   "go_deeper": "Aluminum is the most common metal in Earth's crust, yet it was once pricier than gold because it was so hard to extract. Recycling a can uses about 95% less energy than making new metal.",
+   "try_it": "Squeeze an empty can: it's light and bendy, and an invisible oxide layer stops it from rusting.",
+   "featured": true,
+   "check_question": {
+    "question": "Recycling aluminum saves about how much energy compared with making it new?",
+    "correct": "About 95%",
+    "wrong": [
+     "About 10%",
+     "About 50%",
+     "None"
+    ],
+    "explanation": "Melting old cans takes far less energy than separating aluminum from its ore."
+   }
+  }
+ },
+ {
+  "number": 14,
+  "symbol": "Si",
+  "name": "Silicon",
+  "mass": "28.085",
+  "mass_is_estimate": false,
+  "family": "md",
+  "group": 14,
+  "period": 3,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ne] 3s² 3p²",
+  "shells": [
+   2,
+   8,
+   4
+  ],
+  "valence_electrons": 4,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Computer chips, solar panels, sand and glass",
+   "go_deeper": "Second most common element in Earth's crust after oxygen. Ultra-pure silicon is a semiconductor: billions of tiny silicon transistors in your phone switch on and off to run every app.",
+   "try_it": "Grab a handful of sand: much of it is silicon dioxide, the same stuff window glass is made from.",
+   "featured": true,
+   "check_question": {
+    "question": "Computer chips are mostly made from...",
+    "correct": "Silicon",
+    "wrong": [
+     "Gold",
+     "Aluminum",
+     "Copper"
+    ],
+    "explanation": "Silicon can be tuned to conduct or block electricity, the on/off behind every bit."
+   }
+  }
+ },
+ {
+  "number": 15,
+  "symbol": "P",
+  "name": "Phosphorus",
+  "mass": "30.974",
+  "mass_is_estimate": false,
+  "family": "nm",
+  "group": 15,
+  "period": 3,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ne] 3s² 3p³",
+  "shells": [
+   2,
+   8,
+   5
+  ],
+  "valence_electrons": 5,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Match heads, fertilizer and the backbone of your DNA",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 16,
+  "symbol": "S",
+  "name": "Sulfur",
+  "mass": "32.06",
+  "mass_is_estimate": false,
+  "family": "nm",
+  "group": 16,
+  "period": 3,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ne] 3s² 3p⁴",
+  "shells": [
+   2,
+   8,
+   6
+  ],
+  "valence_electrons": 6,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "The smell of rotten eggs and the hardening of rubber tires",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 17,
+  "symbol": "Cl",
+  "name": "Chlorine",
+  "mass": "35.45",
+  "mass_is_estimate": false,
+  "family": "hl",
+  "group": 17,
+  "period": 3,
+  "block": "p",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "[Ne] 3s² 3p⁵",
+  "shells": [
+   2,
+   8,
+   7
+  ],
+  "valence_electrons": 7,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Keeping swimming pools and tap water germ-free",
+   "go_deeper": "Chlorine gas is toxic, yet tiny amounts dissolved in water kill germs in pools and drinking water. It's also half of table salt.",
+   "try_it": "That 'pool smell' mostly comes from chloramines, made when chlorine reacts with sweat and urine.",
+   "featured": true,
+   "check_question": {
+    "question": "Why is chlorine added to swimming pools?",
+    "correct": "To kill germs",
+    "wrong": [
+     "To make water blue",
+     "To warm the water",
+     "To add minerals"
+    ],
+    "explanation": "Chlorine destroys bacteria and viruses, which is why it made tap water so much safer."
+   }
+  }
+ },
+ {
+  "number": 18,
+  "symbol": "Ar",
+  "name": "Argon",
+  "mass": "39.95",
+  "mass_is_estimate": false,
+  "family": "ng",
+  "group": 18,
+  "period": 3,
+  "block": "p",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "[Ne] 3s² 3p⁶",
+  "shells": [
+   2,
+   8,
+   8
+  ],
+  "valence_electrons": 8,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "The gas inside old-style light bulbs and welding shields",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 19,
+  "symbol": "K",
+  "name": "Potassium",
+  "mass": "39.098",
+  "mass_is_estimate": false,
+  "family": "ak",
+  "group": 1,
+  "period": 4,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 4s¹",
+  "shells": [
+   2,
+   8,
+   8,
+   1
+  ],
+  "valence_electrons": 1,
+  "latin_name": "kalium",
+  "content": {
+   "everyday_use": "Bananas, potatoes and every nerve signal in your body",
+   "go_deeper": "Your nerves fire by moving potassium and sodium ions across cell membranes. Every heartbeat and every thought depends on it.",
+   "try_it": "Check a sports-drink label: potassium is one of the 'electrolytes' it replaces when you sweat.",
+   "featured": true,
+   "check_question": {
+    "question": "Which element do your nerve signals depend on?",
+    "correct": "Potassium",
+    "wrong": [
+     "Neon",
+     "Gold",
+     "Helium"
+    ],
+    "explanation": "Potassium ions flowing out of nerve cells help reset them after each signal."
+   }
+  }
+ },
+ {
+  "number": 20,
+  "symbol": "Ca",
+  "name": "Calcium",
+  "mass": "40.078",
+  "mass_is_estimate": false,
+  "family": "ae",
+  "group": 2,
+  "period": 4,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 4s²",
+  "shells": [
+   2,
+   8,
+   8,
+   2
+  ],
+  "valence_electrons": 2,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Bones, teeth, milk, chalk and seashells",
+   "go_deeper": "About 99% of the calcium in your body is in bones and teeth. Seashells, chalk, marble and limestone are all calcium carbonate.",
+   "try_it": "Drop a piece of chalk into vinegar. The bubbles are carbon dioxide released as the acid breaks down calcium carbonate.",
+   "featured": true,
+   "check_question": {
+    "question": "Seashells and chalk are mostly made of...",
+    "correct": "Calcium carbonate",
+    "wrong": [
+     "Iron oxide",
+     "Sodium chloride",
+     "Silicon dioxide"
+    ],
+    "explanation": "CaCO₃ + acid → carbon dioxide gas + water + a calcium salt."
+   }
+  }
+ },
+ {
+  "number": 21,
+  "symbol": "Sc",
+  "name": "Scandium",
+  "mass": "44.956",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 3,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d¹ 4s²",
+  "shells": [
+   2,
+   8,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Extra-strong aluminum alloys in baseball bats and bike frames",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 22,
+  "symbol": "Ti",
+  "name": "Titanium",
+  "mass": "47.867",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 4,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d² 4s²",
+  "shells": [
+   2,
+   8,
+   10,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Hip and dental implants, aircraft, and the white in paint and sunscreen",
+   "go_deeper": "As strong as many steels but about 45% lighter, and your body doesn't reject it, so it's ideal for hip and dental implants. Titanium dioxide is the bright white in paint, toothpaste and mineral sunscreen.",
+   "try_it": "Check a mineral sunscreen: titanium dioxide or zinc oxide is listed as the active ingredient.",
+   "featured": true,
+   "check_question": {
+    "question": "Why is titanium used for bone implants?",
+    "correct": "It's strong, light and body-friendly",
+    "wrong": [
+     "It's magnetic",
+     "It's the cheapest metal",
+     "It dissolves over time"
+    ],
+    "explanation": "Titanium forms a stable oxide skin that bone can grow onto."
+   }
+  }
+ },
+ {
+  "number": 23,
+  "symbol": "V",
+  "name": "Vanadium",
+  "mass": "50.942",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 5,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d³ 4s²",
+  "shells": [
+   2,
+   8,
+   11,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Tough chrome-vanadium steel in wrenches and tools",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 24,
+  "symbol": "Cr",
+  "name": "Chromium",
+  "mass": "51.996",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 6,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d⁵ 4s¹",
+  "shells": [
+   2,
+   8,
+   13,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Shiny chrome trim and rust-proof stainless steel",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 25,
+  "symbol": "Mn",
+  "name": "Manganese",
+  "mass": "54.938",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 7,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d⁵ 4s²",
+  "shells": [
+   2,
+   8,
+   13,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Steel making and alkaline AA batteries",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 26,
+  "symbol": "Fe",
+  "name": "Iron",
+  "mass": "55.845",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 8,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d⁶ 4s²",
+  "shells": [
+   2,
+   8,
+   14,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": "ferrum",
+  "content": {
+   "everyday_use": "Steel buildings and the hemoglobin that carries oxygen in your blood",
+   "go_deeper": "Earth's core is mostly iron. In your blood, iron in hemoglobin grabs oxygen in your lungs and delivers it to every cell. Steel is iron with a little carbon.",
+   "try_it": "Crush iron-fortified cereal in water inside a zip bag, then sweep a strong magnet along the bag. Tiny black iron specks gather under it.",
+   "featured": true,
+   "check_question": {
+    "question": "What does iron do in your blood?",
+    "correct": "Carries oxygen",
+    "wrong": [
+     "Fights germs",
+     "Makes it salty",
+     "Clots wounds"
+    ],
+    "explanation": "Each hemoglobin molecule has four iron atoms, each able to hold an oxygen molecule."
+   }
+  }
+ },
+ {
+  "number": 27,
+  "symbol": "Co",
+  "name": "Cobalt",
+  "mass": "58.933",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 9,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d⁷ 4s²",
+  "shells": [
+   2,
+   8,
+   15,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Deep blue glass and phone battery cathodes",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 28,
+  "symbol": "Ni",
+  "name": "Nickel",
+  "mass": "58.693",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 10,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d⁸ 4s²",
+  "shells": [
+   2,
+   8,
+   16,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "US nickels, stainless steel and rechargeable batteries",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 29,
+  "symbol": "Cu",
+  "name": "Copper",
+  "mass": "63.546",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 11,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d¹⁰ 4s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": "cuprum",
+  "content": {
+   "everyday_use": "Electrical wiring and the coating on pennies",
+   "go_deeper": "Copper conducts electricity almost as well as silver but costs far less, so it wires homes and electronics. The Statue of Liberty is copper; her green color is a protective layer that formed over decades.",
+   "try_it": "Soak a dull penny in vinegar with a pinch of salt for 5 minutes. The dark copper oxide dissolves and it shines again.",
+   "featured": true,
+   "check_question": {
+    "question": "Why is the Statue of Liberty green?",
+    "correct": "Copper reacted with air to form a patina",
+    "wrong": [
+     "It was painted green",
+     "Algae grows on it",
+     "It's made of jade"
+    ],
+    "explanation": "Copper slowly reacts with oxygen, CO₂ and water to form green copper carbonates."
+   }
+  }
+ },
+ {
+  "number": 30,
+  "symbol": "Zn",
+  "name": "Zinc",
+  "mass": "65.38",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 12,
+  "period": 4,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d¹⁰ 4s²",
+  "shells": [
+   2,
+   8,
+   18,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Rust-proof coatings on fences and white mineral sunscreen",
+   "go_deeper": "A coat of zinc protects steel from rust because zinc corrodes first, sacrificing itself. Zinc oxide sunscreen sits on your skin and blocks UV light.",
+   "try_it": "Look for dull gray, crystal-patterned coatings on fences and lamp posts: that's galvanized (zinc-coated) steel.",
+   "featured": true,
+   "check_question": {
+    "question": "How does a zinc coating protect steel?",
+    "correct": "Zinc corrodes first instead of the steel",
+    "wrong": [
+     "Zinc is magnetic",
+     "Zinc repels water",
+     "Zinc is harder than steel"
+    ],
+    "explanation": "Zinc gives up electrons more easily than iron, so it rusts away first."
+   }
+  }
+ },
+ {
+  "number": 31,
+  "symbol": "Ga",
+  "name": "Gallium",
+  "mass": "69.723",
+  "mass_is_estimate": false,
+  "family": "pt",
+  "group": 13,
+  "period": 4,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d¹⁰ 4s² 4p¹",
+  "shells": [
+   2,
+   8,
+   18,
+   3
+  ],
+  "valence_electrons": 3,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "LEDs and compact fast phone chargers",
+   "go_deeper": "Gallium melts at 29.8 °C, below body temperature, so a chunk melts in your palm. Gallium nitride makes blue LEDs and small, cool-running fast phone chargers.",
+   "try_it": "Check a phone charger box for 'GaN': that means gallium nitride inside.",
+   "featured": true,
+   "check_question": {
+    "question": "What makes gallium unusual?",
+    "correct": "It melts in your hand",
+    "wrong": [
+     "It glows in the dark",
+     "It's a gas",
+     "It floats on water"
+    ],
+    "explanation": "Its melting point (29.8 °C) is lower than body temperature (37 °C)."
+   }
+  }
+ },
+ {
+  "number": 32,
+  "symbol": "Ge",
+  "name": "Germanium",
+  "mass": "72.630",
+  "mass_is_estimate": false,
+  "family": "md",
+  "group": 14,
+  "period": 4,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d¹⁰ 4s² 4p²",
+  "shells": [
+   2,
+   8,
+   18,
+   4
+  ],
+  "valence_electrons": 4,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Fiber-optic cables and infrared night-vision lenses",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 33,
+  "symbol": "As",
+  "name": "Arsenic",
+  "mass": "74.922",
+  "mass_is_estimate": false,
+  "family": "md",
+  "group": 15,
+  "period": 4,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d¹⁰ 4s² 4p³",
+  "shells": [
+   2,
+   8,
+   18,
+   5
+  ],
+  "valence_electrons": 5,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Infamous poison in history; high-speed chips today",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 34,
+  "symbol": "Se",
+  "name": "Selenium",
+  "mass": "78.971",
+  "mass_is_estimate": false,
+  "family": "nm",
+  "group": 16,
+  "period": 4,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d¹⁰ 4s² 4p⁴",
+  "shells": [
+   2,
+   8,
+   18,
+   6
+  ],
+  "valence_electrons": 6,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Dandruff shampoo and a trace nutrient you need",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 35,
+  "symbol": "Br",
+  "name": "Bromine",
+  "mass": "79.904",
+  "mass_is_estimate": false,
+  "family": "hl",
+  "group": 17,
+  "period": 4,
+  "block": "p",
+  "state": "Liquid",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d¹⁰ 4s² 4p⁵",
+  "shells": [
+   2,
+   8,
+   18,
+   7
+  ],
+  "valence_electrons": 7,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Flame retardants and pool sanitizers",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 36,
+  "symbol": "Kr",
+  "name": "Krypton",
+  "mass": "83.798",
+  "mass_is_estimate": false,
+  "family": "ng",
+  "group": 18,
+  "period": 4,
+  "block": "p",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "[Ar] 3d¹⁰ 4s² 4p⁶",
+  "shells": [
+   2,
+   8,
+   18,
+   8
+  ],
+  "valence_electrons": 8,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Some high-speed camera flashes and insulated windows",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 37,
+  "symbol": "Rb",
+  "name": "Rubidium",
+  "mass": "85.468",
+  "mass_is_estimate": false,
+  "family": "ak",
+  "group": 1,
+  "period": 5,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 5s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   8,
+   1
+  ],
+  "valence_electrons": 1,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Ultra-precise atomic clocks",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 38,
+  "symbol": "Sr",
+  "name": "Strontium",
+  "mass": "87.62",
+  "mass_is_estimate": false,
+  "family": "ae",
+  "group": 2,
+  "period": 5,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 5s²",
+  "shells": [
+   2,
+   8,
+   18,
+   8,
+   2
+  ],
+  "valence_electrons": 2,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Brilliant red fireworks",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 39,
+  "symbol": "Y",
+  "name": "Yttrium",
+  "mass": "88.906",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 3,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹ 5s²",
+  "shells": [
+   2,
+   8,
+   18,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Red phosphors in old TV screens and laser crystals",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 40,
+  "symbol": "Zr",
+  "name": "Zirconium",
+  "mass": "91.224",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 4,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d² 5s²",
+  "shells": [
+   2,
+   8,
+   18,
+   10,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Sparkly cubic zirconia jewelry and nuclear fuel tubes",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 41,
+  "symbol": "Nb",
+  "name": "Niobium",
+  "mass": "92.906",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 5,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d⁴ 5s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   12,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Superconducting magnets in MRI scanners",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 42,
+  "symbol": "Mo",
+  "name": "Molybdenum",
+  "mass": "95.95",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 6,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d⁵ 5s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   13,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "High-strength steel for tools and engines",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 43,
+  "symbol": "Tc",
+  "name": "Technetium",
+  "mass": "98",
+  "mass_is_estimate": true,
+  "family": "tm",
+  "group": 7,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Kr] 4d⁵ 5s²",
+  "shells": [
+   2,
+   8,
+   18,
+   13,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Medical scans that show how organs are working",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 44,
+  "symbol": "Ru",
+  "name": "Ruthenium",
+  "mass": "101.07",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 8,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d⁷ 5s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   15,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Hard-drive layers and tough electrical contacts",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 45,
+  "symbol": "Rh",
+  "name": "Rhodium",
+  "mass": "102.91",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 9,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d⁸ 5s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   16,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Catalytic converters that clean car exhaust",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 46,
+  "symbol": "Pd",
+  "name": "Palladium",
+  "mass": "106.42",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 10,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹⁰",
+  "shells": [
+   2,
+   8,
+   18,
+   18
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Catalytic converters and dental fillings",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 47,
+  "symbol": "Ag",
+  "name": "Silver",
+  "mass": "107.87",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 11,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹⁰ 5s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": "argentum",
+  "content": {
+   "everyday_use": "Jewelry, mirrors and germ-fighting wound dressings",
+   "go_deeper": "Silver is the best electrical and thermal conductor of all elements. Silver ions kill bacteria, so it's used in wound dressings and odor-resistant sportswear.",
+   "try_it": "Silver tarnishes black when it meets sulfur in air or eggs. Clean it with aluminum foil, baking soda and hot water (with an adult).",
+   "featured": true,
+   "check_question": {
+    "question": "Which element is the best conductor of electricity?",
+    "correct": "Silver",
+    "wrong": [
+     "Copper",
+     "Gold",
+     "Aluminum"
+    ],
+    "explanation": "Silver beats copper slightly, but copper is used for wires because it's much cheaper."
+   }
+  }
+ },
+ {
+  "number": 48,
+  "symbol": "Cd",
+  "name": "Cadmium",
+  "mass": "112.41",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 12,
+  "period": 5,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹⁰ 5s²",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Older rechargeable batteries and bright yellow pigments (toxic)",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 49,
+  "symbol": "In",
+  "name": "Indium",
+  "mass": "114.82",
+  "mass_is_estimate": false,
+  "family": "pt",
+  "group": 13,
+  "period": 5,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹⁰ 5s² 5p¹",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   3
+  ],
+  "valence_electrons": 3,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "The clear conductive layer in touchscreens",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 50,
+  "symbol": "Sn",
+  "name": "Tin",
+  "mass": "118.71",
+  "mass_is_estimate": false,
+  "family": "pt",
+  "group": 14,
+  "period": 5,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹⁰ 5s² 5p²",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   4
+  ],
+  "valence_electrons": 4,
+  "latin_name": "stannum",
+  "content": {
+   "everyday_use": "Solder in electronics and the coating on food cans",
+   "go_deeper": "'Tin cans' are steel with a thin tin coating. Tin mixed with copper makes bronze, the alloy that gave the Bronze Age its name.",
+   "try_it": "Solder that joins parts on circuit boards is mostly tin. Look closely at a circuit board's shiny silver blobs.",
+   "featured": true,
+   "check_question": {
+    "question": "Bronze is copper mixed with...",
+    "correct": "Tin",
+    "wrong": [
+     "Zinc",
+     "Iron",
+     "Lead"
+    ],
+    "explanation": "Copper + tin = bronze; copper + zinc = brass."
+   }
+  }
+ },
+ {
+  "number": 51,
+  "symbol": "Sb",
+  "name": "Antimony",
+  "mass": "121.76",
+  "mass_is_estimate": false,
+  "family": "md",
+  "group": 15,
+  "period": 5,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹⁰ 5s² 5p³",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   5
+  ],
+  "valence_electrons": 5,
+  "latin_name": "stibium",
+  "content": {
+   "everyday_use": "Flame retardants and car battery plates",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 52,
+  "symbol": "Te",
+  "name": "Tellurium",
+  "mass": "127.60",
+  "mass_is_estimate": false,
+  "family": "md",
+  "group": 16,
+  "period": 5,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹⁰ 5s² 5p⁴",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   6
+  ],
+  "valence_electrons": 6,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Thin-film solar panels",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 53,
+  "symbol": "I",
+  "name": "Iodine",
+  "mass": "126.90",
+  "mass_is_estimate": false,
+  "family": "hl",
+  "group": 17,
+  "period": 5,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹⁰ 5s² 5p⁵",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   7
+  ],
+  "valence_electrons": 7,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Iodized salt and antiseptic for cuts",
+   "go_deeper": "Your thyroid gland needs iodine to make hormones that control your metabolism. Iodized salt was introduced to prevent goiter, a swollen thyroid.",
+   "try_it": "With an adult, put a drop of iodine antiseptic on a slice of potato: it turns blue-black wherever there's starch.",
+   "featured": true,
+   "check_question": {
+    "question": "Which gland needs iodine to work?",
+    "correct": "Thyroid",
+    "wrong": [
+     "Liver",
+     "Pancreas",
+     "Adrenal"
+    ],
+    "explanation": "Thyroid hormones contain iodine atoms; without enough, the gland swells."
+   }
+  }
+ },
+ {
+  "number": 54,
+  "symbol": "Xe",
+  "name": "Xenon",
+  "mass": "131.29",
+  "mass_is_estimate": false,
+  "family": "ng",
+  "group": 18,
+  "period": 5,
+  "block": "p",
+  "state": "Gas",
+  "radioactive": false,
+  "electron_config": "[Kr] 4d¹⁰ 5s² 5p⁶",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   8
+  ],
+  "valence_electrons": 8,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Bright car headlights and spacecraft ion engines",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 55,
+  "symbol": "Cs",
+  "name": "Cesium",
+  "mass": "132.91",
+  "mass_is_estimate": false,
+  "family": "ak",
+  "group": 1,
+  "period": 6,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 6s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   8,
+   1
+  ],
+  "valence_electrons": 1,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Atomic clocks that define the second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 56,
+  "symbol": "Ba",
+  "name": "Barium",
+  "mass": "137.33",
+  "mass_is_estimate": false,
+  "family": "ae",
+  "group": 2,
+  "period": 6,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   8,
+   2
+  ],
+  "valence_electrons": 2,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Green fireworks and X-ray 'barium meals'",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 57,
+  "symbol": "La",
+  "name": "Lanthanum",
+  "mass": "138.91",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 5d¹ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   18,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Camera lenses and hybrid car batteries",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 58,
+  "symbol": "Ce",
+  "name": "Cerium",
+  "mass": "140.12",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹ 5d¹ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   19,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lighter flints and glass polishing powder",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 59,
+  "symbol": "Pr",
+  "name": "Praseodymium",
+  "mass": "140.91",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f³ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   21,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Welders' goggles and strong magnets",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 60,
+  "symbol": "Nd",
+  "name": "Neodymium",
+  "mass": "144.24",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f⁴ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   22,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Super-strong magnets in earbuds, speakers and electric motors",
+   "go_deeper": "Neodymium-iron-boron magnets are the strongest permanent magnets. Tiny ones make earbuds, phone vibration motors and electric car motors possible.",
+   "try_it": "The magnets that hold some phone cases or laptop lids are likely neodymium. Keep them away from cards and pacemakers.",
+   "featured": true,
+   "check_question": {
+    "question": "Neodymium is famous for making...",
+    "correct": "Super-strong magnets",
+    "wrong": [
+     "Glow sticks",
+     "Rocket fuel",
+     "Glass"
+    ],
+    "explanation": "A neodymium magnet can lift over 1,000 times its own weight."
+   }
+  }
+ },
+ {
+  "number": 61,
+  "symbol": "Pm",
+  "name": "Promethium",
+  "mass": "145",
+  "mass_is_estimate": true,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Xe] 4f⁵ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   23,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Tiny nuclear batteries; historically, glow-in-the-dark paint",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 62,
+  "symbol": "Sm",
+  "name": "Samarium",
+  "mass": "150.36",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f⁶ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   24,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Heat-tough magnets in guitar pickups and motors",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 63,
+  "symbol": "Eu",
+  "name": "Europium",
+  "mass": "151.96",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f⁷ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   25,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Glowing anti-counterfeit marks on euro banknotes",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 64,
+  "symbol": "Gd",
+  "name": "Gadolinium",
+  "mass": "157.25",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f⁷ 5d¹ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   25,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "MRI contrast dye that makes scans clearer",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 65,
+  "symbol": "Tb",
+  "name": "Terbium",
+  "mass": "158.93",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f⁹ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   27,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Green colors in screens and lamps",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 66,
+  "symbol": "Dy",
+  "name": "Dysprosium",
+  "mass": "162.50",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁰ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   28,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Magnets in electric car motors and wind turbines",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 67,
+  "symbol": "Ho",
+  "name": "Holmium",
+  "mass": "164.93",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹¹ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   29,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Medical lasers and magnet pole pieces",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 68,
+  "symbol": "Er",
+  "name": "Erbium",
+  "mass": "167.26",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹² 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   30,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Amplifying internet signals in fiber-optic cables",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 69,
+  "symbol": "Tm",
+  "name": "Thulium",
+  "mass": "168.93",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹³ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   31,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Portable X-ray machines",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 70,
+  "symbol": "Yb",
+  "name": "Ytterbium",
+  "mass": "173.05",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lasers and next-generation atomic clocks",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 71,
+  "symbol": "Lu",
+  "name": "Lutetium",
+  "mass": "174.97",
+  "mass_is_estimate": false,
+  "family": "ln",
+  "group": null,
+  "period": 6,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d¹ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "PET scanner detectors and targeted cancer treatment",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 72,
+  "symbol": "Hf",
+  "name": "Hafnium",
+  "mass": "178.49",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 4,
+  "period": 6,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d² 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   10,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Tiny transistors inside modern computer chips",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 73,
+  "symbol": "Ta",
+  "name": "Tantalum",
+  "mass": "180.95",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 5,
+  "period": 6,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d³ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   11,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Small capacitors in phones and game consoles",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 74,
+  "symbol": "W",
+  "name": "Tungsten",
+  "mass": "183.84",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 6,
+  "period": 6,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d⁴ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   12,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": "wolfram",
+  "content": {
+   "everyday_use": "Classic light-bulb filaments and drill bits",
+   "go_deeper": "Tungsten has the highest melting point of any metal, 3,422 °C, so it was used for glowing light-bulb filaments. Its symbol W comes from its other name, wolfram.",
+   "try_it": "Find an old clear incandescent bulb: the thin coil inside is tungsten.",
+   "featured": true,
+   "check_question": {
+    "question": "Why is tungsten's symbol W?",
+    "correct": "From its other name, wolfram",
+    "wrong": [
+     "W stands for 'white'",
+     "It was discovered in Wales",
+     "W is for 'wire'"
+    ],
+    "explanation": "Several elements' symbols come from older or Latin names."
+   }
+  }
+ },
+ {
+  "number": 75,
+  "symbol": "Re",
+  "name": "Rhenium",
+  "mass": "186.21",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 7,
+  "period": 6,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d⁵ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   13,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Superalloys in jet engines",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 76,
+  "symbol": "Os",
+  "name": "Osmium",
+  "mass": "190.23",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 8,
+  "period": 6,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d⁶ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   14,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "The densest element; fountain-pen nib tips",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 77,
+  "symbol": "Ir",
+  "name": "Iridium",
+  "mass": "192.22",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 9,
+  "period": 6,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d⁷ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   15,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Long-life spark plugs; the layer that marks the dinosaur-ending asteroid",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 78,
+  "symbol": "Pt",
+  "name": "Platinum",
+  "mass": "195.08",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 10,
+  "period": 6,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d⁹ 6s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   17,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Catalytic converters and jewelry",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 79,
+  "symbol": "Au",
+  "name": "Gold",
+  "mass": "196.97",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 11,
+  "period": 6,
+  "block": "d",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d¹⁰ 6s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": "aurum",
+  "content": {
+   "everyday_use": "Jewelry, medals and connectors in electronics",
+   "go_deeper": "Gold barely reacts with anything, so it never rusts or tarnishes; that's why ancient gold artifacts still shine. Your phone has a little gold on its connectors for reliable contacts.",
+   "try_it": "About 10,000 to 15,000 old phones together contain roughly a pound of gold. Recycling electronics recovers it.",
+   "featured": true,
+   "check_question": {
+    "question": "Gold's symbol Au comes from the Latin word...",
+    "correct": "aurum",
+    "wrong": [
+     "aureate",
+     "audium",
+     "aurora"
+    ],
+    "explanation": "Aurum means 'shining dawn' in Latin."
+   }
+  }
+ },
+ {
+  "number": 80,
+  "symbol": "Hg",
+  "name": "Mercury",
+  "mass": "200.59",
+  "mass_is_estimate": false,
+  "family": "tm",
+  "group": 12,
+  "period": 6,
+  "block": "d",
+  "state": "Liquid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d¹⁰ 6s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": "hydrargyrum",
+  "content": {
+   "everyday_use": "Old thermometers and fluorescent lamps",
+   "go_deeper": "Mercury is the only metal that's liquid at room temperature. It's toxic, so mercury thermometers have mostly been replaced by digital ones. Hg comes from the Latin hydrargyrum, 'water-silver'.",
+   "try_it": "If a fluorescent bulb breaks, air out the room and let an adult clean it up carefully: those bulbs contain a little mercury.",
+   "featured": true,
+   "check_question": {
+    "question": "Which metal is a liquid at room temperature?",
+    "correct": "Mercury",
+    "wrong": [
+     "Gallium",
+     "Lead",
+     "Sodium"
+    ],
+    "explanation": "Mercury melts at about −39 °C. Gallium only melts at 29.8 °C."
+   }
+  }
+ },
+ {
+  "number": 81,
+  "symbol": "Tl",
+  "name": "Thallium",
+  "mass": "204.38",
+  "mass_is_estimate": false,
+  "family": "pt",
+  "group": 13,
+  "period": 6,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   3
+  ],
+  "valence_electrons": 3,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Medical heart scans; toxic in large amounts",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 82,
+  "symbol": "Pb",
+  "name": "Lead",
+  "mass": "207.2",
+  "mass_is_estimate": false,
+  "family": "pt",
+  "group": 14,
+  "period": 6,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   4
+  ],
+  "valence_electrons": 4,
+  "latin_name": "plumbum",
+  "content": {
+   "everyday_use": "Car batteries and X-ray shielding aprons",
+   "go_deeper": "Lead is dense and soft and blocks X-rays, which is why the dentist drapes a heavy apron over you. It was removed from paint and gasoline because it harms the brain, especially in kids.",
+   "try_it": "Here's a twist: pencil 'lead' has never contained lead. It's graphite, a form of carbon.",
+   "featured": true,
+   "check_question": {
+    "question": "What's actually inside a 'lead' pencil?",
+    "correct": "Graphite (carbon)",
+    "wrong": [
+     "Lead",
+     "Tin",
+     "Charcoal dust and glue"
+    ],
+    "explanation": "People once thought graphite was a type of lead ore, and the name stuck."
+   }
+  }
+ },
+ {
+  "number": 83,
+  "symbol": "Bi",
+  "name": "Bismuth",
+  "mass": "208.98",
+  "mass_is_estimate": false,
+  "family": "pt",
+  "group": 15,
+  "period": 6,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": false,
+  "electron_config": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   5
+  ],
+  "valence_electrons": 5,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Pink stomach-relief medicine and rainbow crystals",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 84,
+  "symbol": "Po",
+  "name": "Polonium",
+  "mass": "209",
+  "mass_is_estimate": true,
+  "family": "pt",
+  "group": 16,
+  "period": 6,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   6
+  ],
+  "valence_electrons": 6,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Antistatic brushes for cleaning camera lenses",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 85,
+  "symbol": "At",
+  "name": "Astatine",
+  "mass": "210",
+  "mass_is_estimate": true,
+  "family": "hl",
+  "group": 17,
+  "period": 6,
+  "block": "p",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   7
+  ],
+  "valence_electrons": 7,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Cancer-treatment research; the rarest natural element",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 86,
+  "symbol": "Rn",
+  "name": "Radon",
+  "mass": "222",
+  "mass_is_estimate": true,
+  "family": "ng",
+  "group": 18,
+  "period": 6,
+  "block": "p",
+  "state": "Gas",
+  "radioactive": true,
+  "electron_config": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   8
+  ],
+  "valence_electrons": 8,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "A radioactive gas that can build up in basements",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 87,
+  "symbol": "Fr",
+  "name": "Francium",
+  "mass": "223",
+  "mass_is_estimate": true,
+  "family": "ak",
+  "group": 1,
+  "period": 7,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 7s¹",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   8,
+   1
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lab research only; extremely rare",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 88,
+  "symbol": "Ra",
+  "name": "Radium",
+  "mass": "226",
+  "mass_is_estimate": true,
+  "family": "ae",
+  "group": 2,
+  "period": 7,
+  "block": "s",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Historic glow-in-the-dark watch dials",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 89,
+  "symbol": "Ac",
+  "name": "Actinium",
+  "mass": "227",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 6d¹ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Targeted cancer-therapy research",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 90,
+  "symbol": "Th",
+  "name": "Thorium",
+  "mass": "232.04",
+  "mass_is_estimate": false,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 6d² 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   18,
+   10,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Old camping lantern mantles; possible future nuclear fuel",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 91,
+  "symbol": "Pa",
+  "name": "Protactinium",
+  "mass": "231.04",
+  "mass_is_estimate": false,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f² 6d¹ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   20,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lab research only",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 92,
+  "symbol": "U",
+  "name": "Uranium",
+  "mass": "238.03",
+  "mass_is_estimate": false,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f³ 6d¹ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   21,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Fuel for nuclear power plants",
+   "go_deeper": "Splitting one uranium-235 nucleus releases tens of millions of times more energy than burning one carbon atom. Nuclear plants use that heat to boil water and spin turbines, producing about a tenth of the world's electricity.",
+   "try_it": "Uranium is mildly radioactive and common in rocks; granite countertops contain trace amounts.",
+   "featured": true,
+   "check_question": {
+    "question": "In a nuclear power plant, energy comes from...",
+    "correct": "Splitting uranium atoms (fission)",
+    "wrong": [
+     "Burning uranium in air",
+     "Fusing hydrogen",
+     "Chemical batteries"
+    ],
+    "explanation": "Fission splits a heavy nucleus; fusion (as in the Sun) joins light ones."
+   }
+  }
+ },
+ {
+  "number": 93,
+  "symbol": "Np",
+  "name": "Neptunium",
+  "mass": "237",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f⁴ 6d¹ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   22,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Neutron detectors and research",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 94,
+  "symbol": "Pu",
+  "name": "Plutonium",
+  "mass": "244",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f⁶ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   24,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Power sources for Mars rovers and deep-space probes",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 95,
+  "symbol": "Am",
+  "name": "Americium",
+  "mass": "243",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f⁷ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   25,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Household smoke detectors",
+   "go_deeper": "Most home smoke detectors hold a tiny amount of americium-241. Its radiation lets a small electric current flow through air; smoke disrupts the current and sets off the alarm.",
+   "try_it": "Look at the back of a smoke alarm for 'Am-241' (don't open it). Test the alarm button monthly.",
+   "featured": true,
+   "check_question": {
+    "question": "How does americium help a smoke detector work?",
+    "correct": "Its radiation lets current flow until smoke blocks it",
+    "wrong": [
+     "It glows when smoke arrives",
+     "It smells smoke",
+     "It heats up near fire"
+    ],
+    "explanation": "Ionization detectors sense the drop in current when smoke particles enter the chamber."
+   }
+  }
+ },
+ {
+  "number": 96,
+  "symbol": "Cm",
+  "name": "Curium",
+  "mass": "247",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f⁷ 6d¹ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   25,
+   9,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Power and X-ray instruments on space probes",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 97,
+  "symbol": "Bk",
+  "name": "Berkelium",
+  "mass": "247",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f⁹ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   27,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lab research only",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 98,
+  "symbol": "Cf",
+  "name": "Californium",
+  "mass": "251",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁰ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   28,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Starting up nuclear reactors and scanning for gold and oil",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 99,
+  "symbol": "Es",
+  "name": "Einsteinium",
+  "mass": "252",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹¹ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   29,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lab research only; made a few atoms at a time",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 100,
+  "symbol": "Fm",
+  "name": "Fermium",
+  "mass": "257",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹² 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   30,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lab research only; made a few atoms at a time",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 101,
+  "symbol": "Md",
+  "name": "Mendelevium",
+  "mass": "258",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹³ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   31,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lab research only; made a few atoms at a time",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 102,
+  "symbol": "No",
+  "name": "Nobelium",
+  "mass": "259",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 7s²",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   8,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lab research only; made a few atoms at a time",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 103,
+  "symbol": "Lr",
+  "name": "Lawrencium",
+  "mass": "266",
+  "mass_is_estimate": true,
+  "family": "ac",
+  "group": null,
+  "period": 7,
+  "block": "f",
+  "state": "Solid",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 7s² 7p¹",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   8,
+   3
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Lab research only; made a few atoms at a time",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 104,
+  "symbol": "Rf",
+  "name": "Rutherfordium",
+  "mass": "267",
+  "mass_is_estimate": true,
+  "family": "tm",
+  "group": 4,
+  "period": 7,
+  "block": "d",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d² 7s² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   10,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 105,
+  "symbol": "Db",
+  "name": "Dubnium",
+  "mass": "268",
+  "mass_is_estimate": true,
+  "family": "tm",
+  "group": 5,
+  "period": 7,
+  "block": "d",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d³ 7s² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   11,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 106,
+  "symbol": "Sg",
+  "name": "Seaborgium",
+  "mass": "269",
+  "mass_is_estimate": true,
+  "family": "tm",
+  "group": 6,
+  "period": 7,
+  "block": "d",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d⁴ 7s² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   12,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 107,
+  "symbol": "Bh",
+  "name": "Bohrium",
+  "mass": "270",
+  "mass_is_estimate": true,
+  "family": "tm",
+  "group": 7,
+  "period": 7,
+  "block": "d",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d⁵ 7s² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   13,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 108,
+  "symbol": "Hs",
+  "name": "Hassium",
+  "mass": "269",
+  "mass_is_estimate": true,
+  "family": "tm",
+  "group": 8,
+  "period": 7,
+  "block": "d",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d⁶ 7s² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   14,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 109,
+  "symbol": "Mt",
+  "name": "Meitnerium",
+  "mass": "278",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 9,
+  "period": 7,
+  "block": "d",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d⁷ 7s² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   15,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 110,
+  "symbol": "Ds",
+  "name": "Darmstadtium",
+  "mass": "281",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 10,
+  "period": 7,
+  "block": "d",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d⁸ 7s² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   16,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 111,
+  "symbol": "Rg",
+  "name": "Roentgenium",
+  "mass": "282",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 11,
+  "period": 7,
+  "block": "d",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d⁹ 7s² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   17,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 112,
+  "symbol": "Cn",
+  "name": "Copernicium",
+  "mass": "285",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 12,
+  "period": 7,
+  "block": "d",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d¹⁰ 7s² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   18,
+   2
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 113,
+  "symbol": "Nh",
+  "name": "Nihonium",
+  "mass": "286",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 13,
+  "period": 7,
+  "block": "p",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹ (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   18,
+   3
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 114,
+  "symbol": "Fl",
+  "name": "Flerovium",
+  "mass": "289",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 14,
+  "period": 7,
+  "block": "p",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p² (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   18,
+   4
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 115,
+  "symbol": "Mc",
+  "name": "Moscovium",
+  "mass": "290",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 15,
+  "period": 7,
+  "block": "p",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³ (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   18,
+   5
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 116,
+  "symbol": "Lv",
+  "name": "Livermorium",
+  "mass": "293",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 16,
+  "period": 7,
+  "block": "p",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴ (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   18,
+   6
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 117,
+  "symbol": "Ts",
+  "name": "Tennessine",
+  "mass": "294",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 17,
+  "period": 7,
+  "block": "p",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵ (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   18,
+   7
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ },
+ {
+  "number": 118,
+  "symbol": "Og",
+  "name": "Oganesson",
+  "mass": "294",
+  "mass_is_estimate": true,
+  "family": "uk",
+  "group": 18,
+  "period": 7,
+  "block": "p",
+  "state": "Unknown",
+  "radioactive": true,
+  "electron_config": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted)",
+  "shells": [
+   2,
+   8,
+   18,
+   32,
+   32,
+   18,
+   8
+  ],
+  "valence_electrons": null,
+  "latin_name": null,
+  "content": {
+   "everyday_use": "Made in particle accelerators; lasts only a split second",
+   "go_deeper": null,
+   "try_it": null,
+   "featured": false,
+   "check_question": null
+  }
+ }
+]

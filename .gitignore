@@ -1,0 +1,11 @@
+.env
+backups/*
+!backups/.gitkeep
+node_modules/
+web/dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+api/test.db
+.DS_Store
+*.tsbuildinfo

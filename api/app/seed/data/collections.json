@@ -1,0 +1,123 @@
+[
+ {
+  "slug": "phone",
+  "label": "Your phone",
+  "symbols": [
+   "Li",
+   "Co",
+   "Si",
+   "Cu",
+   "Au",
+   "Ag",
+   "In",
+   "Ta",
+   "Nd",
+   "Al",
+   "Sn",
+   "Ga",
+   "Pd",
+   "Hf",
+   "Tb",
+   "Dy"
+  ],
+  "note": "A smartphone holds dozens of elements: lithium and cobalt in the battery, silicon chips, indium in the touchscreen, neodymium in the speakers."
+ },
+ {
+  "slug": "kitchen",
+  "label": "Kitchen",
+  "symbols": [
+   "Na",
+   "Cl",
+   "Fe",
+   "Al",
+   "C",
+   "O",
+   "H",
+   "K",
+   "Ca",
+   "I",
+   "Cu",
+   "Sn",
+   "F",
+   "N"
+  ],
+  "note": "Salt, foil, cast-iron pans, copper pots and even the water from the tap are all chemistry."
+ },
+ {
+  "slug": "body",
+  "label": "Your body",
+  "symbols": [
+   "O",
+   "C",
+   "H",
+   "N",
+   "Ca",
+   "P",
+   "K",
+   "S",
+   "Na",
+   "Cl",
+   "Mg",
+   "Fe",
+   "Zn",
+   "I",
+   "Cu",
+   "Se"
+  ],
+  "note": "Just four elements, oxygen, carbon, hydrogen and nitrogen, make up about 96% of your body's mass."
+ },
+ {
+  "slug": "fireworks",
+  "label": "Fireworks",
+  "symbols": [
+   "Sr",
+   "Ba",
+   "Cu",
+   "Na",
+   "Li",
+   "Mg",
+   "Al",
+   "K",
+   "S",
+   "C",
+   "Ca",
+   "Ti"
+  ],
+  "note": "Each color is an element's light fingerprint: strontium red, barium green, copper blue, sodium yellow."
+ },
+ {
+  "slug": "space",
+  "label": "Space & rockets",
+  "symbols": [
+   "H",
+   "He",
+   "O",
+   "Ti",
+   "Be",
+   "Pu",
+   "Xe",
+   "Al",
+   "Cm",
+   "N"
+  ],
+  "note": "Hydrogen and oxygen fuel rockets, xenon pushes ion engines, plutonium powers rovers far from the Sun."
+ },
+ {
+  "slug": "hospital",
+  "label": "Hospital",
+  "symbols": [
+   "Tc",
+   "Gd",
+   "Ba",
+   "I",
+   "Ti",
+   "He",
+   "Nb",
+   "Lu",
+   "Pb",
+   "O",
+   "Ag"
+  ],
+  "note": "MRI magnets cooled by helium, X-ray aprons made with lead, and radioactive tracers that light up organs."
+ }
+]

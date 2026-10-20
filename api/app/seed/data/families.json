@@ -1,0 +1,79 @@
+[
+ {
+  "code": "ak",
+  "name": "Alkali metal",
+  "short_name": "Alkali metals",
+  "color": "#FF595E",
+  "description": "Soft, shiny metals with 1 outer electron they give away easily. They react with water, some of them violently, so they never occur pure in nature."
+ },
+ {
+  "code": "ae",
+  "name": "Alkaline earth metal",
+  "short_name": "Alkaline earth",
+  "color": "#FF924C",
+  "description": "Metals with 2 outer electrons. Reactive but calmer than alkali metals, and common in rocks, shells and bones."
+ },
+ {
+  "code": "tm",
+  "name": "Transition metal",
+  "short_name": "Transition metals",
+  "color": "#FFCA3A",
+  "description": "The classic metals: strong, shiny, good conductors of heat and electricity, and often the source of bright colors in paints, gems and fireworks."
+ },
+ {
+  "code": "pt",
+  "name": "Post-transition metal",
+  "short_name": "Post-transition",
+  "color": "#8AC926",
+  "description": "Softer metals with lower melting points. Great for alloys, solder and coatings."
+ },
+ {
+  "code": "md",
+  "name": "Metalloid",
+  "short_name": "Metalloids",
+  "color": "#2EC4B6",
+  "description": "Part metal, part nonmetal. Many are semiconductors, which is why they sit inside nearly every electronic device."
+ },
+ {
+  "code": "nm",
+  "name": "Reactive nonmetal",
+  "short_name": "Nonmetals",
+  "color": "#1982C4",
+  "description": "The builders of life. They share or gain electrons to form molecules like water, sugar, proteins and DNA."
+ },
+ {
+  "code": "hl",
+  "name": "Halogen",
+  "short_name": "Halogens",
+  "color": "#4CC9F0",
+  "description": "7 outer electrons, just one short of a full shell, so they are very reactive. 'Halogen' means 'salt-former': with metals they make salts."
+ },
+ {
+  "code": "ng",
+  "name": "Noble gas",
+  "short_name": "Noble gases",
+  "color": "#7B61FF",
+  "description": "A full outer shell means they barely react with anything. They glow in bright colors when electricity passes through them."
+ },
+ {
+  "code": "ln",
+  "name": "Lanthanide",
+  "short_name": "Lanthanides",
+  "color": "#F15BB5",
+  "description": "The 'rare earth' metals. Small amounts power strong magnets, screen colors, lasers and fiber optics."
+ },
+ {
+  "code": "ac",
+  "name": "Actinide",
+  "short_name": "Actinides",
+  "color": "#D883FF",
+  "description": "All radioactive. The family includes nuclear fuels; most members are made in reactors or particle accelerators."
+ },
+ {
+  "code": "uk",
+  "name": "Superheavy (properties uncertain)",
+  "short_name": "Superheavy",
+  "color": "#9AA0B5",
+  "description": "Made a few atoms at a time in particle accelerators. They decay in seconds or less, so most of their properties are predictions."
+ }
+]

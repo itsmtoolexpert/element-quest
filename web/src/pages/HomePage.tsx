@@ -22,7 +22,11 @@ export default function HomePage({ user }: { user: User }) {
 
   const logout = useMutation({
     mutationFn: api.logout,
-    onSuccess: () => { qc.clear(); qc.setQueryData(["me"], null); },
+    onSuccess: () => {
+      qc.clear();
+      qc.setQueryData(["me"], null);
+      if ("caches" in window) caches.delete("eq-session").catch(() => {});
+    },
   });
   const due = stats.data?.due_today ?? 0;
 

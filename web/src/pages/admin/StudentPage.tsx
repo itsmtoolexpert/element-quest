@@ -61,6 +61,7 @@ export default function StudentPage() {
         {elements.data && famMap.size > 0 && (
           <PeriodicTable elements={elements.data} families={famMap} showPreview={false}
             colorOf={(e) => LEVEL_COLORS[d.levels[String(e.number)] ?? "unexplored"]}
+            describe={(e) => LEVEL_TEXT[d.levels[String(e.number)] ?? "unexplored"].toLowerCase()}
             state={{ visible: new Set(elements.data.filter((e) => d.levels[String(e.number)] !== "unexplored").map((e) => e.number)),
               glowing: new Set(), pct: new Map(), seen: new Set() }}
             onPick={() => {}} />

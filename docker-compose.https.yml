@@ -1,0 +1,11 @@
+# Optional HTTPS, so phones and tablets can install the app fully and keep working pages
+# while the laptop is asleep. Set it up with:  ./scripts/https-setup.sh
+# That script adds this file to COMPOSE_FILE in .env, so plain `docker compose up -d` uses it.
+
+services:
+  web:
+    volumes:
+      - ./web/nginx/https.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    ports:
+      - "${WEB_HTTPS_PORT:-8443}:443"

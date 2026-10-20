@@ -8,7 +8,7 @@ from .routers import admin, auth, elements, materials, me, quiz, review
 
 settings = get_settings()
 
-app = FastAPI(title="Element Quest API", version="0.1.0", docs_url="/api/docs", openapi_url="/api/openapi.json")
+app = FastAPI(title="Element Quest API", version="1.0.0", docs_url="/api/docs", openapi_url="/api/openapi.json")
 app.add_middleware(
     SessionMiddleware,
     secret_key=settings.secret_key,

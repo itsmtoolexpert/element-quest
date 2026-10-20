@@ -9,3 +9,4 @@ __pycache__/
 api/test.db
 .DS_Store
 *.tsbuildinfo
+certs/

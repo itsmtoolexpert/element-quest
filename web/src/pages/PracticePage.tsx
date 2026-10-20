@@ -99,6 +99,7 @@ export default function PracticePage() {
         {elements.data && mastery.data && famMap.size > 0 ? (
           <PeriodicTable elements={elements.data} families={famMap} showPreview={false}
             colorOf={(e) => LEVEL_COLORS[mastery.data.levels[String(e.number)] ?? "unexplored"]}
+            describe={(e) => LEVEL_TEXT[mastery.data.levels[String(e.number)] ?? "unexplored"].toLowerCase()}
             state={{
               visible: new Set(elements.data.filter((e) => mastery.data.levels[String(e.number)] !== "unexplored").map((e) => e.number)),
               glowing: new Set(), pct: new Map(), seen: new Set(),

@@ -79,12 +79,33 @@ export class ApiError extends Error {
   constructor(public status: number, message: string) { super(message); }
 }
 
+/** Fired on window when the server stops or starts answering, so the app can show a banner. */
+export const CONNECTION_EVENT = "eq:connection";
+let lastOnline = true;
+function setOnline(online: boolean) {
+  if (online === lastOnline) return;
+  lastOnline = online;
+  window.dispatchEvent(new CustomEvent(CONNECTION_EVENT, { detail: { online } }));
+}
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(path, {
-    credentials: "same-origin",
-    headers: init?.body ? { "Content-Type": "application/json" } : undefined,
-    ...init,
-  });
+  let res: Response;
+  try {
+    res = await fetch(path, {
+      credentials: "same-origin",
+      headers: init?.body ? { "Content-Type": "application/json" } : undefined,
+      ...init,
+    });
+  } catch {
+    setOnline(false);
+    throw new ApiError(0, "Can't reach Element Quest. Is the laptop awake?");
+  }
+  // 502–504 come from Nginx when the API container isn't answering.
+  if (res.status >= 502 && res.status <= 504) {
+    setOnline(false);
+    throw new ApiError(res.status, "Element Quest is starting up or the laptop is busy. Try again in a moment.");
+  }
+  setOnline(true);
   if (!res.ok) {
     let msg = res.statusText;
     try {
@@ -104,6 +125,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
+  health: () => request<{ status: string }>("/api/health"),
   profiles: () => request<Profile[]>("/api/auth/profiles"),
   me: () => request<User>("/api/auth/me"),
   login: (username: string, password: string) =>

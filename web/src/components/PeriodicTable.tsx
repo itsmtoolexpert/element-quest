@@ -24,12 +24,14 @@ const CELL = "clamp(44px, 5.1vw, 64px)";
 const ROW = "clamp(48px, 5.6vw, 70px)";
 
 export default function PeriodicTable({
-  elements, families, state, onPick, colorOf, showPreview = true,
+  elements, families, state, onPick, colorOf, describe, showPreview = true,
 }: {
   elements: ElementSummary[]; families: Map<string, Family>; state: TableState;
   onPick: (e: ElementSummary, from: HTMLElement) => void;
   /** Override tile color (e.g. by mastery level); defaults to family color. */
   colorOf?: (e: ElementSummary) => string;
+  /** Extra words for screen readers and the tooltip, e.g. "mastered". */
+  describe?: (e: ElementSummary) => string;
   showPreview?: boolean;
 }) {
   const [hover, setHover] = useState<ElementSummary>(() => elements.find((e) => e.symbol === "Fe") ?? elements[0]);
@@ -77,7 +79,8 @@ export default function PeriodicTable({
             <button key={e.number}
               onClick={(ev) => onPick(e, ev.currentTarget)}
               onMouseEnter={() => setHover(e)} onFocus={() => setHover(e)}
-              aria-label={`${e.name}, ${e.symbol}, atomic number ${e.number}${state.seen.has(e.number) ? ", explored" : ""}`}
+              aria-label={`${e.name}, ${e.symbol}, atomic number ${e.number}${state.seen.has(e.number) ? ", explored" : ""}${describe ? `, ${describe(e)}` : ""}`}
+              title={describe ? `${e.name}: ${describe(e)}` : undefined}
               className={`tint relative flex min-w-0 flex-col items-center justify-center rounded-lg border px-1 transition duration-200 hover:z-10 hover:scale-[1.14] hover:shadow-lg focus-visible:z-10 ${dim ? "opacity-20 grayscale" : ""} ${glow ? "eq-glow" : ""}`}
               style={{ gridColumn: col, gridRow: row, ["--c" as string]: colorOf ? colorOf(e) : fam?.color ?? "#9AA0B5" }}>
               <span className="absolute left-1 top-0.5 font-mono text-[10px] text-muted">{e.number}</span>

@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
 import { useEffect, useMemo, useRef, type ReactNode } from "react";
 
@@ -20,8 +20,8 @@ export default function ElementSheet({
   onPickMaterial: (m: Material) => void;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
-  const q = useQuery({ queryKey: ["element", number], queryFn: () => api.element(number!), enabled: number != null });
-  const e = q.data && q.data.number === number ? q.data : undefined;
+  const q = useQuery({ queryKey: ["element", number], queryFn: () => api.element(number!), enabled: number != null, placeholderData: keepPreviousData });
+  const e = q.data;
 
   useEffect(() => {
     const d = ref.current;

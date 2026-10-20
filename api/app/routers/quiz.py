@@ -4,7 +4,6 @@ from __future__ import annotations
 import random
 import re
 from collections import Counter
-from datetime import datetime, timedelta, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel, Field
@@ -12,8 +11,8 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from ..db import get_db
-from ..models import Card, Exploration, QuizAttempt, Review, User
-from ..progress import award_progress_badges
+from ..models import Exploration, QuizAttempt, User
+from ..progress import award_progress_badges, trouble_elements
 from ..questions import FACTS, Bank
 from ..security import current_user
 from ..srs import mastery
@@ -65,18 +64,7 @@ class FinishOut(BaseModel):
 
 def weak_elements(db: Session, user_id: int, limit: int = 12) -> list[int]:
     """Elements the student gets wrong most (recent reviews and quizzes), then cards still being learned."""
-    since = datetime.now(timezone.utc) - timedelta(days=60)
-    wrong: Counter[int] = Counter()
-    right: Counter[int] = Counter()
-    rows = db.execute(select(Card.element_number, Review.correct).join(Card, Card.id == Review.card_id)
-                      .where(Review.user_id == user_id, Review.reviewed_at >= since))
-    for n, ok in rows:
-        (right if ok else wrong)[n] += 1
-    for qa in db.scalars(select(QuizAttempt).where(QuizAttempt.user_id == user_id, QuizAttempt.created_at >= since)):
-        for r in qa.questions:
-            (right if r.get("correct") else wrong)[int(r["element"])] += 1
-    scored = sorted(wrong, key=lambda n: (-(wrong[n] / (wrong[n] + right[n])), -wrong[n]))
-    picked = scored[:limit]
+    picked = [n for n, _, _ in trouble_elements(db, user_id, limit=limit, days=60)]
     if len(picked) < limit:
         levels = mastery(db, user_id)
         learning = [n for n, lv in levels.items() if lv == "learning" and n not in picked]

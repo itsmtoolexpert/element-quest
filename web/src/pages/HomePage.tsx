@@ -1,9 +1,14 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Compass, Dumbbell, LogOut } from "lucide-react";
+import { Compass, Dumbbell, KeyRound, LayoutDashboard, LogOut, Settings } from "lucide-react";
+import { useState } from "react";
 import { NavLink, Route, Routes } from "react-router";
 
 import { api, type User } from "../api";
 import Avatar from "../components/Avatar";
+import PasswordDialog from "../components/PasswordDialog";
+import DashboardPage from "./admin/DashboardPage";
+import ManagePage from "./admin/ManagePage";
+import StudentPage from "./admin/StudentPage";
 import ExplorePage from "./ExplorePage";
 import PracticePage from "./PracticePage";
 import QuizSession from "./QuizSession";
@@ -11,7 +16,9 @@ import ReviewSession from "./ReviewSession";
 
 export default function HomePage({ user }: { user: User }) {
   const qc = useQueryClient();
-  const stats = useQuery({ queryKey: ["stats", "me"], queryFn: api.myStats });
+  const isAdmin = user.role === "admin";
+  const stats = useQuery({ queryKey: ["stats", "me"], queryFn: api.myStats, enabled: !isAdmin });
+  const [pwOpen, setPwOpen] = useState(false);
 
   const logout = useMutation({
     mutationFn: api.logout,
@@ -31,39 +38,62 @@ export default function HomePage({ user }: { user: User }) {
             </h1>
           </div>
         </div>
-        <button onClick={() => logout.mutate()} className="flex items-center gap-2 rounded-full bg-surface-2 px-4 py-2 font-bold">
-          <LogOut size={16} /> Sign out
-        </button>
+        <div className="flex gap-2">
+          <button onClick={() => setPwOpen(true)} className="flex items-center gap-2 rounded-full bg-surface-2 px-4 py-2 font-bold" aria-label="Change password">
+            <KeyRound size={16} /> <span className="max-sm:hidden">Password</span>
+          </button>
+          <button onClick={() => logout.mutate()} className="flex items-center gap-2 rounded-full bg-surface-2 px-4 py-2 font-bold">
+            <LogOut size={16} /> Sign out
+          </button>
+        </div>
       </header>
 
-      {user.role === "student" ? (
+      {!isAdmin && (
         <section className="grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Your progress">
           <Stat label="Explored" value={`${stats.data?.explored ?? 0} / 118`} bar={(stats.data?.explored ?? 0) / 118} />
           <Stat label="Mastered" value={`${stats.data?.mastered ?? 0} / 118`} bar={(stats.data?.mastered ?? 0) / 118} />
           <Stat label="Due today" value={String(due)} />
           <Stat label="Streak" value={`${stats.data?.streak_days ?? 0} day${stats.data?.streak_days === 1 ? "" : "s"}`} />
         </section>
-      ) : (
-        <p className="rounded-2xl border border-dashed border-line bg-surface p-4 text-muted">
-          The parent/teacher dashboard and content editor arrive in milestone 4. For now you can try everything students see.
-        </p>
       )}
 
-      <nav className="flex w-max max-w-full gap-1.5 rounded-full border border-line bg-surface p-1.5" aria-label="Sections">
-        <Tab to="/" end icon={<Compass size={18} />}>Explore</Tab>
-        <Tab to="/practice" icon={<Dumbbell size={18} />}>
-          Practice
-          {due > 0 && <span className="ml-1 rounded-full bg-accent px-2 text-xs leading-5 text-white">{due}</span>}
-        </Tab>
+      <nav className="flex max-w-full flex-wrap gap-1.5 self-start rounded-3xl border border-line bg-surface p-1.5" aria-label="Sections">
+        {isAdmin ? (
+          <>
+            <Tab to="/" end icon={<LayoutDashboard size={18} />}>Dashboard</Tab>
+            <Tab to="/manage" icon={<Settings size={18} />}>Manage</Tab>
+            <Tab to="/explore" icon={<Compass size={18} />}>Explore</Tab>
+            <Tab to="/practice" icon={<Dumbbell size={18} />}>Practice</Tab>
+          </>
+        ) : (
+          <>
+            <Tab to="/" end icon={<Compass size={18} />}>Explore</Tab>
+            <Tab to="/practice" icon={<Dumbbell size={18} />}>
+              Practice
+              {due > 0 && <span className="ml-1 rounded-full bg-accent px-2 text-xs leading-5 text-white">{due}</span>}
+            </Tab>
+          </>
+        )}
       </nav>
 
       <Routes>
-        <Route index element={<ExplorePage user={user} />} />
+        {isAdmin ? (
+          <>
+            <Route index element={<DashboardPage />} />
+            <Route path="students/:id" element={<StudentPage />} />
+            <Route path="manage/*" element={<ManagePage />} />
+            <Route path="explore" element={<ExplorePage user={user} />} />
+          </>
+        ) : (
+          <Route index element={<ExplorePage user={user} />} />
+        )}
         <Route path="practice" element={<PracticePage />} />
         <Route path="practice/review" element={<ReviewSession />} />
         <Route path="practice/quiz/:mode" element={<QuizSession />} />
-        <Route path="*" element={<ExplorePage user={user} />} />
+        <Route path="*" element={isAdmin ? <DashboardPage /> : <ExplorePage user={user} />} />
       </Routes>
+
+      <PasswordDialog user={user} open={pwOpen} onClose={() => setPwOpen(false)} />
     </div>
   );
 }

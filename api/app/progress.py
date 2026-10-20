@@ -8,7 +8,7 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from .config import get_settings
-from .models import Badge, Element, Exploration, Family, QuizAttempt, Review
+from .models import Badge, Card, Element, Exploration, Family, QuizAttempt, Review
 
 EXPLORE_MILESTONES = [1, 10, 25, 50, 100, 118]
 MASTERY_MILESTONES = [1, 10, 25, 50, 118]
@@ -86,6 +86,28 @@ def activity_days(db: Session, user_id: int) -> set[date]:
     times += db.scalars(select(Review.reviewed_at).where(Review.user_id == user_id, Review.reviewed_at >= since))
     times += db.scalars(select(QuizAttempt.created_at).where(QuizAttempt.user_id == user_id, QuizAttempt.created_at >= since))
     return {local_date(t) for t in times}
+
+
+def element_accuracy(db: Session, user_id: int, days: int = 30) -> dict[int, tuple[int, int]]:
+    """Per element: (right, wrong) answers in reviews and quizzes over the last N days."""
+    since = datetime.now(ZoneInfo("UTC")) - timedelta(days=days)
+    acc: dict[int, list[int]] = {}
+    rows = db.execute(select(Card.element_number, Review.correct).join(Card, Card.id == Review.card_id)
+                      .where(Review.user_id == user_id, Review.reviewed_at >= since))
+    for n, ok in rows:
+        acc.setdefault(n, [0, 0])[0 if ok else 1] += 1
+    for qa in db.scalars(select(QuizAttempt).where(QuizAttempt.user_id == user_id, QuizAttempt.created_at >= since)):
+        for r in qa.questions:
+            acc.setdefault(int(r["element"]), [0, 0])[0 if r.get("correct") else 1] += 1
+    return {n: (v[0], v[1]) for n, v in acc.items()}
+
+
+def trouble_elements(db: Session, user_id: int, limit: int = 5, days: int = 30) -> list[tuple[int, int, int]]:
+    """(element, right, wrong) for the elements missed most, worst accuracy first."""
+    acc = element_accuracy(db, user_id, days)
+    missed = [(n, r, w) for n, (r, w) in acc.items() if w > 0]
+    missed.sort(key=lambda t: (-(t[2] / (t[1] + t[2])), -t[2]))
+    return missed[:limit]
 
 
 def streak_days(days: set[date]) -> int:

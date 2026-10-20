@@ -1,6 +1,7 @@
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
+from pydantic import BaseModel, Field
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -8,7 +9,7 @@ from ..config import get_settings
 from ..db import get_db
 from ..models import User
 from ..schemas import LoginIn, ProfileOut, UserOut
-from ..security import current_user, throttle, verify_password
+from ..security import current_user, hash_password, throttle, verify_password
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
@@ -42,6 +43,21 @@ def login(body: LoginIn, request: Request, db: Session = Depends(get_db)) -> Use
 @router.post("/logout", status_code=status.HTTP_204_NO_CONTENT)
 def logout(request: Request) -> None:
     request.session.clear()
+
+
+class PasswordChange(BaseModel):
+    current: str = Field(min_length=1, max_length=128)
+    new: str = Field(min_length=4, max_length=128)
+
+
+@router.post("/password", status_code=status.HTTP_204_NO_CONTENT)
+def change_password(body: PasswordChange, user: User = Depends(current_user), db: Session = Depends(get_db)) -> None:
+    if not verify_password(user.password_hash, body.current):
+        raise HTTPException(status.HTTP_400_BAD_REQUEST, "Your current password doesn't match.")
+    if user.role == "admin" and len(body.new) < 8:
+        raise HTTPException(status.HTTP_400_BAD_REQUEST, "Admin passwords need at least 8 characters.")
+    user.password_hash = hash_password(body.new)
+    db.commit()
 
 
 @router.get("/me", response_model=UserOut)

@@ -165,47 +165,12 @@ def state(z: int, sym: str) -> str:
     return "Solid"
 
 # --- materials ("What's inside") -----------------------------------------
-import re
+import sys
 
-def parse_group(s: str) -> dict[str, float]:
-    stack: list[dict[str, float]] = [{}]
-    i = 0
-    while i < len(s):
-        ch = s[i]
-        if ch == "(":
-            stack.append({}); i += 1
-        elif ch == ")":
-            i += 1
-            n = ""
-            while i < len(s) and (s[i].isdigit() or s[i] == "."):
-                n += s[i]; i += 1
-            g = stack.pop(); mul = float(n) if n else 1.0
-            for k, v in g.items():
-                stack[-1][k] = stack[-1].get(k, 0) + v * mul
-        else:
-            m = re.match(r"([A-Z][a-z]?)(\d*\.?\d*)", s[i:])
-            if not m or not m.group(1):
-                raise ValueError(f"bad formula near {s[i:]!r}")
-            stack[-1][m.group(1)] = stack[-1].get(m.group(1), 0) + (float(m.group(2)) if m.group(2) else 1.0)
-            i += len(m.group(0))
-    return stack[0]
-
-def parse_formula(f: str) -> dict[str, float]:
-    total: dict[str, float] = {}
-    for part in re.split(r"[·*](?=\d*[A-Z(])", f.replace(" ", "")):
-        m = re.match(r"^(\d*\.?\d+)?(.*)$", part)
-        mul = float(m.group(1)) if m.group(1) else 1.0
-        for k, v in parse_group(m.group(2)).items():
-            total[k] = total.get(k, 0) + v * mul
-    return total
-
-def mass_composition(atoms: dict[str, float], masses: dict[str, float]) -> dict[str, float]:
-    w = {s: n * masses[s] for s, n in atoms.items()}
-    t = sum(w.values())
-    return {s: round(v / t * 100, 4) for s, v in sorted(w.items(), key=lambda kv: -kv[1])}
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "api"))
+from app.chem import mass_composition, parse_formula, tidy_atoms  # noqa: E402
 
 def build_materials(masses: dict[str, float]) -> list[dict]:
-    import sys
     sys.path.insert(0, str(Path(__file__).parent))
     from materials_source import FEATURED_MATERIALS, MATERIALS
 
@@ -216,7 +181,7 @@ def build_materials(masses: dict[str, float]) -> list[dict]:
             atoms = parse_formula(m["f"])
             comp = mass_composition(atoms, masses)
             kind = "element" if len(atoms) == 1 else "compound"
-            atoms_out = {k: (int(v) if v == int(v) else v) for k, v in atoms.items()}
+            atoms_out = tidy_atoms(atoms)
         else:
             for s in m["m"]:
                 assert s in masses, (m["n"], s)

@@ -11,22 +11,22 @@ A self-paced periodic table learning app for students. They explore all 118 elem
 ## Run it on your Mac
 
 1. Install [Docker Desktop for Mac](https://docs.docker.com/desktop/setup/install/mac-install/) and start it.
-2. Get the code and make your settings file:
+2. Get the code and create your settings file (`.env`, with random passwords):
 
    ```sh
    git clone https://github.com/itsmtoolexpert/element-quest.git
    cd element-quest
-   cp .env.example .env
+   ./scripts/setup.sh
    ```
 
-3. Edit `.env`. Set `POSTGRES_PASSWORD` and `ADMIN_PASSWORD`, and set `SECRET_KEY` to the output of `openssl rand -hex 32`.
-4. Start it:
+   It prints the Parent / Teacher password. Keep it. To pick your own, edit `ADMIN_PASSWORD` in `.env` before step 3.
+3. Start it (always from inside the `element-quest` folder, where `.env` lives):
 
    ```sh
    docker compose up -d --build
    ```
 
-5. Open <http://localhost:8080>.
+4. Open <http://localhost:8080>.
 
 The first start creates the database, loads all 118 elements and creates three accounts:
 

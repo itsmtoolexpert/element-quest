@@ -24,8 +24,14 @@ const CELL = "clamp(44px, 5.1vw, 64px)";
 const ROW = "clamp(48px, 5.6vw, 70px)";
 
 export default function PeriodicTable({
-  elements, families, state, onPick,
-}: { elements: ElementSummary[]; families: Map<string, Family>; state: TableState; onPick: (e: ElementSummary, from: HTMLElement) => void }) {
+  elements, families, state, onPick, colorOf, showPreview = true,
+}: {
+  elements: ElementSummary[]; families: Map<string, Family>; state: TableState;
+  onPick: (e: ElementSummary, from: HTMLElement) => void;
+  /** Override tile color (e.g. by mastery level); defaults to family color. */
+  colorOf?: (e: ElementSummary) => string;
+  showPreview?: boolean;
+}) {
   const [hover, setHover] = useState<ElementSummary>(() => elements.find((e) => e.symbol === "Fe") ?? elements[0]);
   const hf = families.get(hover.family_code);
 
@@ -49,7 +55,7 @@ export default function PeriodicTable({
         ))}
 
         {/* Preview of the hovered element in the empty space above the transition metals */}
-        <div className="pointer-events-none hidden items-center gap-3 px-2 md:flex" style={{ gridColumn: "5 / 14", gridRow: "2 / 5" }} aria-hidden="true">
+        {showPreview && <div className="pointer-events-none hidden items-center gap-3 px-2 md:flex" style={{ gridColumn: "5 / 14", gridRow: "2 / 5" }} aria-hidden="true">
           <div className="tint flex aspect-square h-[80%] flex-col items-center justify-center rounded-2xl border-2" style={{ ["--c" as string]: hf?.color }}>
             <span className="font-mono text-xs text-muted">{hover.number}</span>
             <span className="font-display text-5xl font-extrabold leading-none">{hover.symbol}</span>
@@ -59,7 +65,7 @@ export default function PeriodicTable({
             <p className="text-sm text-muted"><b>{hf?.name}</b> · {hover.mass} u{hover.valence_electrons != null ? ` · ${hover.valence_electrons} valence e⁻` : ""}</p>
             <p className="line-clamp-2 max-w-[42ch] text-sm text-muted">{hover.everyday_use}</p>
           </div>
-        </div>
+        </div>}
 
         {elements.map((e) => {
           const { col, row } = place(e);
@@ -73,7 +79,7 @@ export default function PeriodicTable({
               onMouseEnter={() => setHover(e)} onFocus={() => setHover(e)}
               aria-label={`${e.name}, ${e.symbol}, atomic number ${e.number}${state.seen.has(e.number) ? ", explored" : ""}`}
               className={`tint relative flex min-w-0 flex-col items-center justify-center rounded-lg border px-1 transition duration-200 hover:z-10 hover:scale-[1.14] hover:shadow-lg focus-visible:z-10 ${dim ? "opacity-20 grayscale" : ""} ${glow ? "eq-glow" : ""}`}
-              style={{ gridColumn: col, gridRow: row, ["--c" as string]: fam?.color ?? "#9AA0B5" }}>
+              style={{ gridColumn: col, gridRow: row, ["--c" as string]: colorOf ? colorOf(e) : fam?.color ?? "#9AA0B5" }}>
               <span className="absolute left-1 top-0.5 font-mono text-[10px] text-muted">{e.number}</span>
               {state.seen.has(e.number) && <span className="absolute right-1 top-1 size-1.5 rounded-full bg-fg/70" />}
               <span className="font-display text-xl font-extrabold leading-none sm:text-2xl">{e.symbol}</span>

@@ -8,8 +8,10 @@ from sqlalchemy.orm import Session
 
 from ..db import get_db
 from ..models import Badge, Element, Exploration, Family, User
-from ..progress import award_explore_badges, badge_label, local_date, streak_days
+from ..progress import activity_days, award_explore_badges, badge_label, streak_days
+from ..questions import Bank
 from ..security import current_user
+from ..srs import due_count, ensure_cards, mastery
 
 router = APIRouter(prefix="/api/me", tags=["me"])
 
@@ -37,22 +39,31 @@ class StatsOut(BaseModel):
     streak_days: int
 
 
-def _families(db: Session) -> dict[str, Family]:
+class MasteryOut(BaseModel):
+    levels: dict[int, str]
+    counts: dict[str, int]
+
+
+def families(db: Session) -> dict[str, Family]:
     return {f.code: f for f in db.scalars(select(Family))}
+
+
+def badges_out(db: Session, codes: list[str]) -> list[BadgeOut]:
+    fams = families(db)
+    return [BadgeOut(code=c, label=badge_label(c, fams)) for c in codes]
 
 
 @router.get("/explored", response_model=ExploredOut)
 def explored(user: User = Depends(current_user), db: Session = Depends(get_db)) -> ExploredOut:
     nums = list(db.scalars(select(Exploration.element_number).where(Exploration.user_id == user.id)
                            .order_by(Exploration.element_number)))
-    fams = _families(db)
-    codes = db.scalars(select(Badge.code).where(Badge.user_id == user.id).order_by(Badge.earned_at))
-    return ExploredOut(numbers=nums, badges=[BadgeOut(code=c, label=badge_label(c, fams)) for c in codes])
+    codes = list(db.scalars(select(Badge.code).where(Badge.user_id == user.id).order_by(Badge.earned_at)))
+    return ExploredOut(numbers=nums, badges=badges_out(db, codes))
 
 
 @router.post("/explored/{number}", response_model=ExploreResult)
 def explore(number: int, user: User = Depends(current_user), db: Session = Depends(get_db)) -> ExploreResult:
-    """Record that the student opened an element file. Idempotent."""
+    """Record that the student opened an element file, and add its flashcards to their deck. Idempotent."""
     el = db.get(Element, number)
     if el is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND, "No such element")
@@ -62,16 +73,26 @@ def explore(number: int, user: User = Depends(current_user), db: Session = Depen
         db.add(Exploration(user_id=user.id, element_number=number))
         db.flush()
         earned = award_explore_badges(db, user.id, el)
+        ensure_cards(db, user.id, Bank(db))
         db.commit()
     count = db.query(Exploration).filter(Exploration.user_id == user.id).count()
-    fams = _families(db)
-    return ExploreResult(new=new, explored_count=count,
-                         new_badges=[BadgeOut(code=c, label=badge_label(c, fams)) for c in earned])
+    return ExploreResult(new=new, explored_count=count, new_badges=badges_out(db, earned))
 
 
 @router.get("/stats", response_model=StatsOut)
 def stats(user: User = Depends(current_user), db: Session = Depends(get_db)) -> StatsOut:
-    seen = list(db.scalars(select(Exploration.first_seen_at).where(Exploration.user_id == user.id)))
-    days = {local_date(t) for t in seen}
-    # mastered and due_today arrive with spaced repetition in milestone 3
-    return StatsOut(explored=len(seen), mastered=0, due_today=0, streak_days=streak_days(days))
+    explored_n = db.query(Exploration).filter(Exploration.user_id == user.id).count()
+    if ensure_cards(db, user.id, Bank(db)):  # elements explored before flashcards existed
+        db.commit()
+    levels = mastery(db, user.id)
+    return StatsOut(explored=explored_n, mastered=sum(1 for v in levels.values() if v == "mastered"),
+                    due_today=due_count(db, user.id), streak_days=streak_days(activity_days(db, user.id)))
+
+
+@router.get("/mastery", response_model=MasteryOut)
+def mastery_map(user: User = Depends(current_user), db: Session = Depends(get_db)) -> MasteryOut:
+    levels = mastery(db, user.id)
+    counts = {k: 0 for k in ("unexplored", "learning", "reviewing", "mastered")}
+    for v in levels.values():
+        counts[v] += 1
+    return MasteryOut(levels=levels, counts=counts)

@@ -29,6 +29,23 @@ export interface Material {
   note: string | null; source: string | null; featured: boolean;
 }
 
+export type Level = "unexplored" | "learning" | "reviewing" | "mastered";
+export interface Mastery { levels: Record<string, Level>; counts: Record<Level, number> }
+
+export interface CardQuestion {
+  card_id: number; element: number; fact: string; kind: string; prompt: string; options: string[]; state: string;
+}
+export interface ReviewQueue { due_total: number; cards: CardQuestion[] }
+export interface ReviewAnswer {
+  correct: boolean; answer: string; explanation: string; rating: string; next_due: string;
+  interval_days: number; element_level: Level; due_total: number; new_badges: Badge[];
+}
+
+export interface QuizQuestion { element: number; fact: string; kind: string; prompt: string; options: string[]; answer: string; explanation: string }
+export interface QuizRound { mode: string; title: string; note: string | null; questions: QuizQuestion[] }
+export interface QuizResult { element: number; fact: string; correct: boolean }
+export interface QuizFinish { score: number; total: number; new_badges: Badge[] }
+
 export interface Badge { code: string; label: string }
 export interface Explored { numbers: number[]; badges: Badge[] }
 export interface ExploreResult { new: boolean; explored_count: number; new_badges: Badge[] }
@@ -65,6 +82,13 @@ export const api = {
   materials: () => request<Material[]>("/api/materials"),
   explored: () => request<Explored>("/api/me/explored"),
   explore: (n: number) => request<ExploreResult>(`/api/me/explored/${n}`, { method: "POST" }),
+  mastery: () => request<Mastery>("/api/me/mastery"),
+  reviewQueue: (limit = 20) => request<ReviewQueue>(`/api/review/queue?limit=${limit}`),
+  reviewAnswer: (cardId: number, answer: string, duration_ms: number) =>
+    request<ReviewAnswer>(`/api/review/${cardId}`, { method: "POST", body: JSON.stringify({ answer, duration_ms }) }),
+  quizStart: (mode: string) => request<QuizRound>("/api/quiz/start", { method: "POST", body: JSON.stringify({ mode }) }),
+  quizFinish: (mode: string, results: QuizResult[]) =>
+    request<QuizFinish>("/api/quiz/finish", { method: "POST", body: JSON.stringify({ mode, results }) }),
   logMiss: (query: string) =>
     request<void>("/api/search-misses", { method: "POST", body: JSON.stringify({ query }) }),
 };

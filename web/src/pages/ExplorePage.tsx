@@ -79,6 +79,7 @@ export default function ExplorePage({ user }: { user: User }) {
         numbers: [...(old?.numbers ?? []), n], badges: [...(old?.badges ?? []), ...r.new_badges],
       }));
       qc.invalidateQueries({ queryKey: ["stats", "me"] });
+      qc.invalidateQueries({ queryKey: ["mastery"] });
       burst(from, 30);
       const b = r.new_badges.find((x) => x.code.startsWith("family:")) ?? r.new_badges.at(-1);
       if (b) {

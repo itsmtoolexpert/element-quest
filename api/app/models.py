@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Any
 
-from sqlalchemy import JSON, Boolean, DateTime, ForeignKey, Index, Integer, String, Text, UniqueConstraint
+from sqlalchemy import JSON, Boolean, DateTime, Float, ForeignKey, Index, Integer, String, Text, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from .db import Base
@@ -139,10 +139,13 @@ class Card(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
     element_number: Mapped[int] = mapped_column(ForeignKey("elements.number", ondelete="CASCADE"))
-    fact: Mapped[str] = mapped_column(String(24))  # symbol | name | valence | family | use | latin
-    state: Mapped[str] = mapped_column(String(12), default="new")
+    fact: Mapped[str] = mapped_column(String(24))  # symbol | family | valence | use | latin
+    state: Mapped[str] = mapped_column(String(12), default="new")  # new | learning | review | relearning
     due: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
     fsrs: Mapped[dict[str, Any]] = mapped_column(JSON, default=dict)  # scheduler's own card state
+    interval_days: Mapped[float] = mapped_column(Float, default=0.0)  # gap between last review and due
+    last_review: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    introduced_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))  # first review
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 

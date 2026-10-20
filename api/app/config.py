@@ -17,6 +17,12 @@ class Settings(BaseSettings):
     seed_students: str = "soysauce:Soy Sauce,ketchupking:Ketchup King"
     # Days, streaks and "today" are counted in this time zone.
     app_timezone: str = "America/Denver"
+    # Learning: at most this many brand-new cards per student per day, so the queue stays small.
+    new_cards_per_day: int = 20
+    # An element is mastered when every one of its cards has a review gap of at least this many days.
+    mastery_days: int = 21
+    # A right answer faster than this counts as "Easy" (longer gap before it comes back).
+    easy_answer_ms: int = 4000
     session_days: int = 30
     login_max_failures: int = 5
     login_lockout_seconds: int = 60

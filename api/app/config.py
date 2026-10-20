@@ -15,6 +15,8 @@ class Settings(BaseSettings):
     student_default_password: str = Field(default="elements", min_length=4)
     # Seeded accounts: "username:Display Name" pairs, comma-separated.
     seed_students: str = "soysauce:Soy Sauce,ketchupking:Ketchup King"
+    # Days, streaks and "today" are counted in this time zone.
+    app_timezone: str = "America/Denver"
     session_days: int = 30
     login_max_failures: int = 5
     login_lockout_seconds: int = 60

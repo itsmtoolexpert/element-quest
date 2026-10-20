@@ -1,19 +1,13 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { LogOut } from "lucide-react";
-import { useMemo, useState } from "react";
 
 import { api, type User } from "../api";
 import Avatar from "../components/Avatar";
-import ElementSheet from "../components/ElementSheet";
-import PeriodicTable from "../components/PeriodicTable";
+import ExplorePage from "./ExplorePage";
 
 export default function HomePage({ user }: { user: User }) {
   const qc = useQueryClient();
-  const elements = useQuery({ queryKey: ["elements"], queryFn: api.elements });
-  const families = useQuery({ queryKey: ["families"], queryFn: api.families });
   const stats = useQuery({ queryKey: ["stats", "me"], queryFn: api.myStats });
-  const [open, setOpen] = useState<string | null>(null);
-  const famMap = useMemo(() => new Map((families.data ?? []).map((f) => [f.code, f])), [families.data]);
 
   const logout = useMutation({
     mutationFn: api.logout,
@@ -37,46 +31,34 @@ export default function HomePage({ user }: { user: User }) {
         </button>
       </header>
 
-      {user.role === "student" && (
+      {user.role === "student" ? (
         <section className="grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Your progress">
-          <Stat label="Explored" value={`${stats.data?.explored ?? 0} / 118`} />
-          <Stat label="Mastered" value={String(stats.data?.mastered ?? 0)} />
-          <Stat label="Due today" value={String(stats.data?.due_today ?? 0)} />
-          <Stat label="Streak" value={`${stats.data?.streak_days ?? 0} days`} />
+          <Stat label="Explored" value={`${stats.data?.explored ?? 0} / 118`} bar={(stats.data?.explored ?? 0) / 118} />
+          <Stat label="Mastered" value={String(stats.data?.mastered ?? 0)} hint="Practice arrives next" />
+          <Stat label="Due today" value={String(stats.data?.due_today ?? 0)} hint="Practice arrives next" />
+          <Stat label="Streak" value={`${stats.data?.streak_days ?? 0} day${stats.data?.streak_days === 1 ? "" : "s"}`} />
         </section>
-      )}
-      {user.role === "admin" && (
+      ) : (
         <p className="rounded-2xl border border-dashed border-line bg-surface p-4 text-muted">
-          The parent/teacher dashboard and content editor arrive in milestone 4. For now you can browse the table.
+          The parent/teacher dashboard and content editor arrive in milestone 4. For now you can explore everything students see.
         </p>
       )}
 
-      {elements.data && famMap.size > 0 ? (
-        <>
-          <ul className="flex flex-wrap gap-2" aria-label="Families">
-            {families.data!.map((f) => (
-              <li key={f.code} className="flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-sm font-bold">
-                <span className="size-3 rounded-full" style={{ background: f.color }} />{f.short_name}
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm text-muted md:hidden">Swipe sideways on the table to see all 18 groups.</p>
-          <PeriodicTable elements={elements.data} families={famMap} onPick={(e) => setOpen(e.symbol)} />
-        </>
-      ) : (
-        <p className="text-muted">{elements.isError ? "Couldn't load the elements." : "Loading the periodic table…"}</p>
-      )}
-
-      <ElementSheet symbol={open} onClose={() => setOpen(null)} />
+      <ExplorePage user={user} />
     </div>
   );
 }
 
-function Stat({ label, value }: { label: string; value: string }) {
+function Stat({ label, value, bar, hint }: { label: string; value: string; bar?: number; hint?: string }) {
   return (
-    <div className="rounded-2xl border border-line bg-surface px-4 py-3">
+    <div className="rounded-2xl border border-line bg-surface px-4 py-3" title={hint}>
       <span className="text-[11px] uppercase tracking-widest text-muted">{label}</span>
       <b className="block font-mono text-xl tabular-nums">{value}</b>
+      {bar != null && (
+        <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-surface-2">
+          <i className="block h-full rounded-full bg-gradient-to-r from-[#4CC9F0] via-[#7B61FF] to-accent transition-[width] duration-500" style={{ width: `${bar * 100}%` }} />
+        </div>
+      )}
     </div>
   );
 }

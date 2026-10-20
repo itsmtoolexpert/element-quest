@@ -1,0 +1,1614 @@
+[
+ {
+  "name": "Diamond",
+  "aliases": [
+   "diamonds",
+   "gemstone diamond"
+  ],
+  "formula": "C",
+  "kind": "element",
+  "composition": {
+   "C": 100.0
+  },
+  "atoms": {
+   "C": 1
+  },
+  "note": "100% carbon. Each carbon atom locks onto four neighbors in a rigid 3D grid, which makes diamond the hardest natural material. Pencil graphite is the very same element arranged in flat, slippery sheets.",
+  "source": null,
+  "featured": true
+ },
+ {
+  "name": "Graphite (pencil 'lead')",
+  "aliases": [
+   "graphite",
+   "pencil",
+   "pencil lead",
+   "graphene"
+  ],
+  "formula": "C",
+  "kind": "element",
+  "composition": {
+   "C": 100.0
+  },
+  "atoms": {
+   "C": 1
+  },
+  "note": "Pure carbon in flat sheets that slide apart and leave a mark on paper. A single sheet one atom thick is graphene, one of the strongest materials ever measured.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Water",
+  "aliases": [
+   "h2o",
+   "ice",
+   "steam",
+   "snow",
+   "rain"
+  ],
+  "formula": "H2O",
+  "kind": "compound",
+  "composition": {
+   "O": 88.8093,
+   "H": 11.1907
+  },
+  "atoms": {
+   "H": 2,
+   "O": 1
+  },
+  "note": "Two hydrogens and one oxygen. By mass it's about 89% oxygen, because one oxygen atom weighs as much as 16 hydrogen atoms.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Table salt",
+  "aliases": [
+   "salt",
+   "sodium chloride",
+   "nacl",
+   "halite",
+   "rock salt"
+  ],
+  "formula": "NaCl",
+  "kind": "compound",
+  "composition": {
+   "Cl": 60.6605,
+   "Na": 39.3395
+  },
+  "atoms": {
+   "Na": 1,
+   "Cl": 1
+  },
+  "note": "Sodium (a metal that fizzes violently in water) plus chlorine (a toxic gas) makes the harmless salt on your fries. Chemistry can completely change properties.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Sugar (sucrose)",
+  "aliases": [
+   "sugar",
+   "sucrose",
+   "table sugar"
+  ],
+  "formula": "C12H22O11",
+  "kind": "compound",
+  "composition": {
+   "O": 51.4141,
+   "C": 42.1073,
+   "H": 6.4786
+  },
+  "atoms": {
+   "C": 12,
+   "H": 22,
+   "O": 11
+  },
+  "note": "Plants build sugar from carbon dioxide and water using sunlight, so every atom in it once floated in the air or the soil.",
+  "source": null,
+  "featured": true
+ },
+ {
+  "name": "Glucose",
+  "aliases": [
+   "blood sugar",
+   "dextrose"
+  ],
+  "formula": "C6H12O6",
+  "kind": "compound",
+  "composition": {
+   "O": 53.2838,
+   "C": 40.002,
+   "H": 6.7142
+  },
+  "atoms": {
+   "C": 6,
+   "H": 12,
+   "O": 6
+  },
+  "note": "Your cells' main fuel. Photosynthesis makes it, and your cells burn it with oxygen to release energy.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Baking soda",
+  "aliases": [
+   "sodium bicarbonate",
+   "bicarbonate",
+   "bicarb"
+  ],
+  "formula": "NaHCO3",
+  "kind": "compound",
+  "composition": {
+   "O": 57.1352,
+   "Na": 27.3671,
+   "C": 14.2978,
+   "H": 1.1999
+  },
+  "atoms": {
+   "Na": 1,
+   "H": 1,
+   "C": 1,
+   "O": 3
+  },
+  "note": "Reacts with acids like vinegar or buttermilk to release carbon dioxide bubbles, which make pancakes and cakes rise.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Vinegar (acetic acid)",
+  "aliases": [
+   "vinegar",
+   "acetic acid"
+  ],
+  "formula": "C2H4O2",
+  "kind": "compound",
+  "composition": {
+   "O": 53.2838,
+   "C": 40.002,
+   "H": 6.7142
+  },
+  "atoms": {
+   "C": 2,
+   "H": 4,
+   "O": 2
+  },
+  "note": "Vinegar is about 5% acetic acid dissolved in water. The acetic acid gives the sour taste and sharp smell.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Chalk / limestone",
+  "aliases": [
+   "chalk",
+   "limestone",
+   "marble",
+   "seashell",
+   "shell",
+   "eggshell",
+   "pearl",
+   "antacid",
+   "tums",
+   "calcium carbonate"
+  ],
+  "formula": "CaCO3",
+  "kind": "compound",
+  "composition": {
+   "O": 47.9558,
+   "Ca": 40.0436,
+   "C": 12.0007
+  },
+  "atoms": {
+   "Ca": 1,
+   "C": 1,
+   "O": 3
+  },
+  "note": "Calcium carbonate. Sea creatures build shells from calcium and dissolved carbon dioxide; limestone and chalk are ancient seabeds made of their remains.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Rust",
+  "aliases": [
+   "iron oxide",
+   "rusty"
+  ],
+  "formula": "Fe2O3",
+  "kind": "compound",
+  "composition": {
+   "Fe": 69.9431,
+   "O": 30.0569
+  },
+  "atoms": {
+   "Fe": 2,
+   "O": 3
+  },
+  "note": "Iron combined with oxygen, with water speeding things up. Rust flakes off, exposing fresh iron underneath, so it keeps spreading.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Sand / quartz",
+  "aliases": [
+   "sand",
+   "quartz",
+   "silica",
+   "flint",
+   "silicon dioxide"
+  ],
+  "formula": "SiO2",
+  "kind": "compound",
+  "composition": {
+   "O": 53.2563,
+   "Si": 46.7437
+  },
+  "atoms": {
+   "Si": 1,
+   "O": 2
+  },
+  "note": "Silicon and oxygen, the two most common elements in Earth's crust. Melt it and it becomes the base of glass.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Window glass",
+  "aliases": [
+   "glass",
+   "soda-lime glass",
+   "bottle glass"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "O": 47,
+   "Si": 34,
+   "Na": 10,
+   "Ca": 6.4,
+   "Mg": 2.4,
+   "Al": 0.5
+  },
+  "atoms": null,
+  "note": "Mostly sand melted with soda (sodium) and lime (calcium), which lower the melting point. Values are approximate.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Pyrex-type glass",
+  "aliases": [
+   "pyrex",
+   "borosilicate",
+   "lab glass"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "O": 54,
+   "Si": 37.7,
+   "B": 4,
+   "Na": 3,
+   "Al": 1.2
+  },
+  "atoms": null,
+  "note": "Borosilicate glass. Boron makes it expand very little when heated, so it doesn't crack in the oven.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Carbon dioxide",
+  "aliases": [
+   "co2",
+   "dry ice",
+   "fizz",
+   "soda bubbles"
+  ],
+  "formula": "CO2",
+  "kind": "compound",
+  "composition": {
+   "O": 72.7079,
+   "C": 27.2921
+  },
+  "atoms": {
+   "C": 1,
+   "O": 2
+  },
+  "note": "What you breathe out and plants take in. Frozen at −78.5 °C it becomes dry ice, which turns straight from solid to gas.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Ammonia",
+  "aliases": [
+   "nh3",
+   "glass cleaner"
+  ],
+  "formula": "NH3",
+  "kind": "compound",
+  "composition": {
+   "N": 82.2441,
+   "H": 17.7559
+  },
+  "atoms": {
+   "N": 1,
+   "H": 3
+  },
+  "note": "Found in many glass cleaners and the starting point for most of the world's fertilizer.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Bleach",
+  "aliases": [
+   "sodium hypochlorite",
+   "clorox"
+  ],
+  "formula": "NaClO",
+  "kind": "compound",
+  "composition": {
+   "Cl": 47.6229,
+   "Na": 30.8843,
+   "O": 21.4928
+  },
+  "atoms": {
+   "Na": 1,
+   "Cl": 1,
+   "O": 1
+  },
+  "note": "Household bleach is a few percent sodium hypochlorite dissolved in water. Never mix it with ammonia or vinegar: toxic gases form.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Hydrogen peroxide",
+  "aliases": [
+   "h2o2",
+   "peroxide"
+  ],
+  "formula": "H2O2",
+  "kind": "compound",
+  "composition": {
+   "O": 94.073,
+   "H": 5.927
+  },
+  "atoms": {
+   "H": 2,
+   "O": 2
+  },
+  "note": "Water with one extra oxygen. It fizzes on a cut because an enzyme in your blood splits it into water and oxygen gas.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Rubbing alcohol",
+  "aliases": [
+   "isopropyl alcohol",
+   "isopropanol"
+  ],
+  "formula": "C3H8O",
+  "kind": "compound",
+  "composition": {
+   "C": 59.9591,
+   "O": 26.6224,
+   "H": 13.4185
+  },
+  "atoms": {
+   "C": 3,
+   "H": 8,
+   "O": 1
+  },
+  "note": "It evaporates fast and carries heat away, which is why it feels cold on your skin.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Ethanol",
+  "aliases": [
+   "alcohol",
+   "ethyl alcohol"
+  ],
+  "formula": "C2H6O",
+  "kind": "compound",
+  "composition": {
+   "C": 52.1435,
+   "O": 34.7283,
+   "H": 13.1281
+  },
+  "atoms": {
+   "C": 2,
+   "H": 6,
+   "O": 1
+  },
+  "note": "The alcohol in hand sanitizer (usually 60–70% mixed with water) and in many car fuels.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Caffeine",
+  "aliases": [
+   "coffee",
+   "energy drink",
+   "tea"
+  ],
+  "formula": "C8H10N4O2",
+  "kind": "compound",
+  "composition": {
+   "C": 49.4804,
+   "N": 28.8516,
+   "O": 16.4773,
+   "H": 5.1907
+  },
+  "atoms": {
+   "C": 8,
+   "H": 10,
+   "N": 4,
+   "O": 2
+  },
+  "note": "Blocks the brain signal that makes you feel sleepy. Coffee and tea contain it, along with water and many flavor molecules.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Aspirin",
+  "aliases": [
+   "acetylsalicylic acid"
+  ],
+  "formula": "C9H8O4",
+  "kind": "compound",
+  "composition": {
+   "C": 60.002,
+   "O": 35.522,
+   "H": 4.476
+  },
+  "atoms": {
+   "C": 9,
+   "H": 8,
+   "O": 4
+  },
+  "note": "A pain reliever originally inspired by a compound found in willow bark.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Vitamin C",
+  "aliases": [
+   "ascorbic acid",
+   "orange juice"
+  ],
+  "formula": "C6H8O6",
+  "kind": "compound",
+  "composition": {
+   "O": 54.5036,
+   "C": 40.9178,
+   "H": 4.5786
+  },
+  "atoms": {
+   "C": 6,
+   "H": 8,
+   "O": 6
+  },
+  "note": "Your body can't make it, so it has to come from foods like oranges, strawberries and bell peppers.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Methane (natural gas)",
+  "aliases": [
+   "methane",
+   "natural gas",
+   "gas stove",
+   "cow burp"
+  ],
+  "formula": "CH4",
+  "kind": "compound",
+  "composition": {
+   "C": 74.8675,
+   "H": 25.1325
+  },
+  "atoms": {
+   "C": 1,
+   "H": 4
+  },
+  "note": "The main gas burning in a gas stove. Cows also burp it out, and it's a strong greenhouse gas.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Propane",
+  "aliases": [
+   "bbq gas",
+   "grill gas",
+   "lpg"
+  ],
+  "formula": "C3H8",
+  "kind": "compound",
+  "composition": {
+   "C": 81.713,
+   "H": 18.287
+  },
+  "atoms": {
+   "C": 3,
+   "H": 8
+  },
+  "note": "Grill and camping-stove fuel, stored as a liquid under pressure in the tank.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Gasoline (octane)",
+  "aliases": [
+   "gasoline",
+   "petrol",
+   "gas",
+   "octane"
+  ],
+  "formula": "C8H18",
+  "kind": "compound",
+  "composition": {
+   "C": 84.1165,
+   "H": 15.8835
+  },
+  "atoms": {
+   "C": 8,
+   "H": 18
+  },
+  "note": "Gasoline is a blend of many hydrocarbons; octane is a typical one. Burning it with oxygen makes carbon dioxide and water.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Epsom salt",
+  "aliases": [
+   "magnesium sulfate",
+   "bath salt"
+  ],
+  "formula": "MgSO4·7H2O",
+  "kind": "compound",
+  "composition": {
+   "O": 71.405,
+   "S": 13.0079,
+   "Mg": 9.8614,
+   "H": 5.7257
+  },
+  "atoms": {
+   "Mg": 1,
+   "S": 1,
+   "O": 11,
+   "H": 14
+  },
+  "note": "Magnesium sulfate crystals with seven water molecules locked inside each unit.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Drywall / gypsum",
+  "aliases": [
+   "drywall",
+   "gypsum",
+   "plaster",
+   "sheetrock"
+  ],
+  "formula": "CaSO4·2H2O",
+  "kind": "compound",
+  "composition": {
+   "O": 55.7573,
+   "Ca": 23.279,
+   "S": 18.6218,
+   "H": 2.342
+  },
+  "atoms": {
+   "Ca": 1,
+   "S": 1,
+   "O": 6,
+   "H": 4
+  },
+  "note": "Calcium sulfate with water built into its crystals. It's the white core of the walls in most homes.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Ruby & sapphire",
+  "aliases": [
+   "ruby",
+   "sapphire",
+   "corundum"
+  ],
+  "formula": "Al2O3",
+  "kind": "compound",
+  "composition": {
+   "Al": 52.9261,
+   "O": 47.0739
+  },
+  "atoms": {
+   "Al": 2,
+   "O": 3
+  },
+  "note": "Aluminum oxide. A trace of chromium makes ruby red; traces of iron and titanium make sapphire blue.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Emerald",
+  "aliases": [
+   "beryl",
+   "aquamarine"
+  ],
+  "formula": "Be3Al2Si6O18",
+  "kind": "compound",
+  "composition": {
+   "O": 53.5788,
+   "Si": 31.3511,
+   "Al": 10.04,
+   "Be": 5.0301
+  },
+  "atoms": {
+   "Be": 3,
+   "Al": 2,
+   "Si": 6,
+   "O": 18
+  },
+  "note": "The mineral beryl. A trace of chromium or vanadium turns it green; iron makes the blue version, aquamarine.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Fool's gold (pyrite)",
+  "aliases": [
+   "fools gold",
+   "fool's gold",
+   "pyrite"
+  ],
+  "formula": "FeS2",
+  "kind": "compound",
+  "composition": {
+   "S": 53.4489,
+   "Fe": 46.5511
+  },
+  "atoms": {
+   "Fe": 1,
+   "S": 2
+  },
+  "note": "Iron and sulfur. Its brassy shine fooled gold miners, but it's harder and much lighter than real gold.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Cubic zirconia",
+  "aliases": [
+   "cz",
+   "fake diamond"
+  ],
+  "formula": "ZrO2",
+  "kind": "compound",
+  "composition": {
+   "Zr": 74.0322,
+   "O": 25.9678
+  },
+  "atoms": {
+   "Zr": 1,
+   "O": 2
+  },
+  "note": "Zirconium oxide, a lab-made crystal that sparkles like diamond for a fraction of the price.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Fluoride (toothpaste)",
+  "aliases": [
+   "sodium fluoride",
+   "fluoride",
+   "toothpaste fluoride"
+  ],
+  "formula": "NaF",
+  "kind": "compound",
+  "composition": {
+   "Na": 54.7537,
+   "F": 45.2463
+  },
+  "atoms": {
+   "Na": 1,
+   "F": 1
+  },
+  "note": "A tiny amount in toothpaste helps rebuild enamel so it resists acid from bacteria.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Nonstick coating (PTFE)",
+  "aliases": [
+   "teflon",
+   "nonstick",
+   "ptfe"
+  ],
+  "formula": "C2F4",
+  "kind": "compound",
+  "composition": {
+   "F": 75.9814,
+   "C": 24.0186
+  },
+  "atoms": {
+   "C": 2,
+   "F": 4
+  },
+  "note": "A long chain of carbon atoms fully wrapped in fluorine. The formula shows one repeating unit of the chain.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "PVC plastic",
+  "aliases": [
+   "pvc",
+   "pvc pipe",
+   "vinyl"
+  ],
+  "formula": "C2H3Cl",
+  "kind": "compound",
+  "composition": {
+   "Cl": 56.7236,
+   "C": 38.4377,
+   "H": 4.8387
+  },
+  "atoms": {
+   "C": 2,
+   "H": 3,
+   "Cl": 1
+  },
+  "note": "Pipes, raincoats and vinyl records. The formula is one repeating unit of the long chain.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Plastic bag (polyethylene)",
+  "aliases": [
+   "plastic bag",
+   "polyethylene",
+   "milk jug",
+   "hdpe",
+   "ldpe"
+  ],
+  "formula": "C2H4",
+  "kind": "compound",
+  "composition": {
+   "C": 85.6277,
+   "H": 14.3723
+  },
+  "atoms": {
+   "C": 2,
+   "H": 4
+  },
+  "note": "The most common plastic: a very long chain of carbon and hydrogen. The formula shows one repeating unit.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Plastic bottle (PET)",
+  "aliases": [
+   "plastic bottle",
+   "water bottle",
+   "pet",
+   "polyester"
+  ],
+  "formula": "C10H8O4",
+  "kind": "compound",
+  "composition": {
+   "C": 62.502,
+   "O": 33.3018,
+   "H": 4.1963
+  },
+  "atoms": {
+   "C": 10,
+   "H": 8,
+   "O": 4
+  },
+  "note": "Soda bottles and polyester clothing are the same plastic. Formula shows one repeating unit.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Styrofoam (polystyrene)",
+  "aliases": [
+   "styrofoam",
+   "polystyrene",
+   "foam cup"
+  ],
+  "formula": "C8H8",
+  "kind": "compound",
+  "composition": {
+   "C": 92.2575,
+   "H": 7.7425
+  },
+  "atoms": {
+   "C": 8,
+   "H": 8
+  },
+  "note": "Polystyrene puffed with air; it's about 95% air by volume, which is why it's so light.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Silicone",
+  "aliases": [
+   "silicone rubber",
+   "phone case",
+   "pdms"
+  ],
+  "formula": "C2H6OSi",
+  "kind": "compound",
+  "composition": {
+   "Si": 37.8739,
+   "C": 32.3947,
+   "O": 21.5754,
+   "H": 8.156
+  },
+  "atoms": {
+   "C": 2,
+   "H": 6,
+   "O": 1,
+   "Si": 1
+  },
+  "note": "A flexible rubber with a backbone of silicon and oxygen. Formula shows one repeating unit.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Paper / cotton (cellulose)",
+  "aliases": [
+   "paper",
+   "cotton",
+   "wood",
+   "cellulose",
+   "cardboard"
+  ],
+  "formula": "C6H10O5",
+  "kind": "compound",
+  "composition": {
+   "O": 49.3367,
+   "C": 44.4465,
+   "H": 6.2168
+  },
+  "atoms": {
+   "C": 6,
+   "H": 10,
+   "O": 5
+  },
+  "note": "Long chains of glucose units that plants use to build cell walls. Wood also contains lignin, which glues the fibers together.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Starch",
+  "aliases": [
+   "cornstarch",
+   "flour starch"
+  ],
+  "formula": "C6H10O5",
+  "kind": "compound",
+  "composition": {
+   "O": 49.3367,
+   "C": 44.4465,
+   "H": 6.2168
+  },
+  "atoms": {
+   "C": 6,
+   "H": 10,
+   "O": 5
+  },
+  "note": "Plants store energy as starch, another chain of glucose units. Iodine turns it blue-black.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Bone & tooth enamel",
+  "aliases": [
+   "bone",
+   "bones",
+   "teeth",
+   "tooth",
+   "enamel",
+   "hydroxyapatite"
+  ],
+  "formula": "Ca5(PO4)3OH",
+  "kind": "compound",
+  "composition": {
+   "O": 41.4064,
+   "Ca": 39.8939,
+   "P": 18.499,
+   "H": 0.2007
+  },
+  "atoms": {
+   "Ca": 5,
+   "P": 3,
+   "O": 13,
+   "H": 1
+  },
+  "note": "The hard mineral hydroxyapatite. Fluoride can swap in for the OH group, making enamel tougher.",
+  "source": null,
+  "featured": true
+ },
+ {
+  "name": "Chlorophyll",
+  "aliases": [
+   "leaf",
+   "leaves",
+   "green plant"
+  ],
+  "formula": "C55H72MgN4O5",
+  "kind": "compound",
+  "composition": {
+   "C": 73.9338,
+   "O": 8.9529,
+   "H": 8.1226,
+   "N": 6.2706,
+   "Mg": 2.7202
+  },
+  "atoms": {
+   "C": 55,
+   "H": 72,
+   "Mg": 1,
+   "N": 4,
+   "O": 5
+  },
+  "note": "The green pigment that captures sunlight. Notice the single magnesium atom at its center.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Green copper patina",
+  "aliases": [
+   "patina",
+   "verdigris",
+   "statue of liberty",
+   "malachite"
+  ],
+  "formula": "Cu2CO3(OH)2",
+  "kind": "compound",
+  "composition": {
+   "Cu": 57.478,
+   "O": 36.1782,
+   "C": 5.432,
+   "H": 0.9117
+  },
+  "atoms": {
+   "Cu": 2,
+   "C": 1,
+   "O": 5,
+   "H": 2
+  },
+  "note": "Copper slowly reacts with air and water to form this green coating, which protects the metal underneath.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Laughing gas",
+  "aliases": [
+   "nitrous oxide",
+   "n2o",
+   "whipped cream gas"
+  ],
+  "formula": "N2O",
+  "kind": "compound",
+  "composition": {
+   "N": 63.6494,
+   "O": 36.3506
+  },
+  "atoms": {
+   "N": 2,
+   "O": 1
+  },
+  "note": "Used by dentists to relax patients and to push whipped cream out of cans.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Ozone",
+  "aliases": [
+   "o3",
+   "ozone layer"
+  ],
+  "formula": "O3",
+  "kind": "element",
+  "composition": {
+   "O": 100.0
+  },
+  "atoms": {
+   "O": 3
+  },
+  "note": "Three oxygen atoms. High in the sky it blocks harmful UV light; near the ground it's a pollutant in smog.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Lye",
+  "aliases": [
+   "sodium hydroxide",
+   "naoh",
+   "drain cleaner",
+   "caustic soda"
+  ],
+  "formula": "NaOH",
+  "kind": "compound",
+  "composition": {
+   "Na": 57.4793,
+   "O": 40.0005,
+   "H": 2.5202
+  },
+  "atoms": {
+   "Na": 1,
+   "O": 1,
+   "H": 1
+  },
+  "note": "A strong base used in soap-making and drain cleaners. It can burn skin, so it's handled with gloves.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Stomach acid (hydrochloric acid)",
+  "aliases": [
+   "stomach acid",
+   "hydrochloric acid",
+   "hcl",
+   "muriatic acid"
+  ],
+  "formula": "HCl",
+  "kind": "compound",
+  "composition": {
+   "Cl": 97.2352,
+   "H": 2.7648
+  },
+  "atoms": {
+   "H": 1,
+   "Cl": 1
+  },
+  "note": "Your stomach makes this acid to break down food and kill germs.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Battery acid (sulfuric acid)",
+  "aliases": [
+   "battery acid",
+   "sulfuric acid",
+   "h2so4"
+  ],
+  "formula": "H2SO4",
+  "kind": "compound",
+  "composition": {
+   "O": 65.2541,
+   "S": 32.6903,
+   "H": 2.0556
+  },
+  "atoms": {
+   "H": 2,
+   "S": 1,
+   "O": 4
+  },
+  "note": "The acid inside car batteries and the most produced industrial chemical in the world.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "MSG",
+  "aliases": [
+   "monosodium glutamate",
+   "umami"
+  ],
+  "formula": "C5H8NO4Na",
+  "kind": "compound",
+  "composition": {
+   "O": 37.8424,
+   "C": 35.512,
+   "Na": 13.5945,
+   "N": 8.2827,
+   "H": 4.7684
+  },
+  "atoms": {
+   "C": 5,
+   "H": 8,
+   "N": 1,
+   "O": 4,
+   "Na": 1
+  },
+  "note": "Gives the savory 'umami' taste. Tomatoes and parmesan contain glutamate naturally.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Stomach-relief medicine",
+  "aliases": [
+   "pepto",
+   "pepto bismol",
+   "bismuth subsalicylate"
+  ],
+  "formula": "C7H5BiO4",
+  "kind": "compound",
+  "composition": {
+   "Bi": 57.7145,
+   "C": 23.2197,
+   "O": 17.6739,
+   "H": 1.3919
+  },
+  "atoms": {
+   "C": 7,
+   "H": 5,
+   "Bi": 1,
+   "O": 4
+  },
+  "note": "Bismuth subsalicylate. The bismuth can temporarily turn your tongue black, which is harmless.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Silver tarnish",
+  "aliases": [
+   "tarnish",
+   "black silver"
+  ],
+  "formula": "Ag2S",
+  "kind": "compound",
+  "composition": {
+   "Ag": 87.0621,
+   "S": 12.9379
+  },
+  "atoms": {
+   "Ag": 2,
+   "S": 1
+  },
+  "note": "Silver reacting with sulfur from the air or foods like eggs forms this dark layer.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Fluorite",
+  "aliases": [
+   "fluorspar"
+  ],
+  "formula": "CaF2",
+  "kind": "compound",
+  "composition": {
+   "Ca": 51.3334,
+   "F": 48.6666
+  },
+  "atoms": {
+   "Ca": 1,
+   "F": 2
+  },
+  "note": "A colorful mineral that often glows under UV light. 'Fluorescence' is named after it.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Air",
+  "aliases": [
+   "atmosphere",
+   "the air",
+   "breath"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "N": 75.5,
+   "O": 23.1,
+   "Ar": 1.29,
+   "C": 0.02
+  },
+  "atoms": null,
+  "note": "By mass. By volume it's about 78% nitrogen, 21% oxygen and 1% argon, plus a little carbon dioxide and water vapor.",
+  "source": null,
+  "featured": true
+ },
+ {
+  "name": "Blood",
+  "aliases": [
+   "human blood",
+   "whole blood",
+   "blood cells"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "O": 75.9414,
+   "H": 10.1866,
+   "C": 10.002,
+   "N": 2.964,
+   "Cl": 0.278,
+   "Na": 0.185,
+   "S": 0.185,
+   "K": 0.163,
+   "Fe": 0.046,
+   "P": 0.035,
+   "Ca": 0.006,
+   "Mg": 0.004,
+   "Si": 0.003,
+   "Zn": 0.001
+  },
+  "atoms": null,
+  "note": "By mass. Blood is mostly water, so oxygen and hydrogen lead. Carbon and nitrogen come from proteins like hemoglobin, salt gives chlorine and sodium, and the tiny 0.05% of iron is what carries oxygen around your body.",
+  "source": "NIST, Blood (ICRP) reference composition",
+  "featured": false
+ },
+ {
+  "name": "Human body",
+  "aliases": [
+   "body",
+   "human",
+   "person",
+   "my body"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "O": 65,
+   "C": 18.5,
+   "H": 9.5,
+   "N": 3.2,
+   "Ca": 1.5,
+   "P": 1,
+   "K": 0.4,
+   "S": 0.3,
+   "Na": 0.2,
+   "Cl": 0.2,
+   "Mg": 0.1
+  },
+  "atoms": null,
+  "note": "By mass. Most of the oxygen and hydrogen is in water, which makes up about 60% of you. Trace elements like iron, zinc and iodine are tiny but essential.",
+  "source": null,
+  "featured": true
+ },
+ {
+  "name": "Seawater",
+  "aliases": [
+   "ocean",
+   "sea water",
+   "salt water",
+   "saltwater"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "O": 85.8,
+   "H": 10.8,
+   "Cl": 1.94,
+   "Na": 1.08,
+   "Mg": 0.13,
+   "S": 0.09,
+   "Ca": 0.04,
+   "K": 0.04
+  },
+  "atoms": null,
+  "note": "Mostly water, plus about 3.5% dissolved salts. Chlorine and sodium from those salts are the next biggest pieces.",
+  "source": null,
+  "featured": true
+ },
+ {
+  "name": "Earth's crust",
+  "aliases": [
+   "rock",
+   "rocks",
+   "earth",
+   "crust",
+   "dirt",
+   "soil"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "O": 46.6,
+   "Si": 27.7,
+   "Al": 8.1,
+   "Fe": 5,
+   "Ca": 3.6,
+   "Na": 2.8,
+   "K": 2.6,
+   "Mg": 2.1
+  },
+  "atoms": null,
+  "note": "By mass. Oxygen is the most common element in the ground under your feet, locked inside minerals.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "The Sun",
+  "aliases": [
+   "sun",
+   "star",
+   "stars"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "H": 73,
+   "He": 25,
+   "O": 0.8,
+   "C": 0.3,
+   "Ne": 0.2,
+   "Fe": 0.2
+  },
+  "atoms": null,
+  "note": "By mass, approximately. The Sun turns about 600 million tonnes of hydrogen into helium every second.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Steel",
+  "aliases": [
+   "carbon steel",
+   "mild steel",
+   "nail",
+   "nails"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Fe": 98.6,
+   "Mn": 0.8,
+   "C": 0.5
+  },
+  "atoms": null,
+  "note": "Iron with a little carbon added, which makes it much stronger. Recipes vary by use.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Stainless steel",
+  "aliases": [
+   "stainless",
+   "spoon",
+   "fork",
+   "cutlery",
+   "kitchen sink"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Fe": 71,
+   "Cr": 18,
+   "Ni": 8,
+   "Mn": 2,
+   "Si": 0.75,
+   "C": 0.08
+  },
+  "atoms": null,
+  "note": "Typical '18/8' grade. Chromium forms an invisible oxide skin that stops rust.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Bronze",
+  "aliases": [
+   "bronze medal",
+   "bell",
+   "bells"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Cu": 88,
+   "Sn": 12
+  },
+  "atoms": null,
+  "note": "Copper plus tin. Harder than either metal alone, it gave the Bronze Age its name.",
+  "source": null,
+  "featured": true
+ },
+ {
+  "name": "Brass",
+  "aliases": [
+   "trumpet",
+   "saxophone",
+   "brass instrument",
+   "door handle"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Cu": 65,
+   "Zn": 35
+  },
+  "atoms": null,
+  "note": "Copper plus zinc: golden, easy to shape, and great for instruments and fittings.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Sterling silver",
+  "aliases": [
+   "silverware",
+   "silver jewelry"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Ag": 92.5,
+   "Cu": 7.5
+  },
+  "atoms": null,
+  "note": "Pure silver is too soft for daily use, so a little copper is added for strength.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "14k gold",
+  "aliases": [
+   "14k",
+   "14 karat",
+   "gold ring",
+   "gold jewelry"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Au": 58.5,
+   "Cu": 28,
+   "Ag": 10,
+   "Zn": 3.5
+  },
+  "atoms": null,
+  "note": "14 parts out of 24 are gold. The rest varies by jeweler; this is a typical yellow-gold mix.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Solder",
+  "aliases": [
+   "lead-free solder",
+   "soldering"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Sn": 96.5,
+   "Ag": 3,
+   "Cu": 0.5
+  },
+  "atoms": null,
+  "note": "A common lead-free solder that melts around 217 °C to join parts on circuit boards.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "US penny",
+  "aliases": [
+   "penny",
+   "pennies",
+   "cent"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Zn": 97.5,
+   "Cu": 2.5
+  },
+  "atoms": null,
+  "note": "Since 1982, pennies are a zinc core with a thin copper coat.",
+  "source": null,
+  "featured": true
+ },
+ {
+  "name": "US nickel (5¢ coin)",
+  "aliases": [
+   "nickel coin",
+   "5 cent",
+   "five cent"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Cu": 75,
+   "Ni": 25
+  },
+  "atoms": null,
+  "note": "Despite its name, a nickel coin is mostly copper.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "US quarter / dime",
+  "aliases": [
+   "quarter",
+   "dime",
+   "coin",
+   "coins"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Cu": 91.67,
+   "Ni": 8.33
+  },
+  "atoms": null,
+  "note": "A copper core sandwiched between copper-nickel layers; look at the edge to see the copper stripe.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Pewter",
+  "aliases": [
+   "pewter mug"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Sn": 92,
+   "Sb": 6,
+   "Cu": 2
+  },
+  "atoms": null,
+  "note": "Modern lead-free pewter: mostly tin, hardened with antimony and copper.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Soda can",
+  "aliases": [
+   "can",
+   "soda can",
+   "aluminum can",
+   "drink can"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "Al": 97.5,
+   "Mn": 1.1,
+   "Mg": 1,
+   "Fe": 0.4
+  },
+  "atoms": null,
+  "note": "An aluminum alloy; small amounts of manganese and magnesium make the thin walls strong.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Aluminum foil",
+  "aliases": [
+   "foil",
+   "tin foil",
+   "kitchen foil"
+  ],
+  "formula": "Al",
+  "kind": "element",
+  "composition": {
+   "Al": 100.0
+  },
+  "atoms": {
+   "Al": 1
+  },
+  "note": "Nearly pure aluminum rolled very thin. People still call it 'tin foil' because it once really was tin.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Light-bulb filament",
+  "aliases": [
+   "filament",
+   "light bulb"
+  ],
+  "formula": "W",
+  "kind": "element",
+  "composition": {
+   "W": 100.0
+  },
+  "atoms": {
+   "W": 1
+  },
+  "note": "Tungsten, chosen because it melts at 3,422 °C, hotter than any other metal.",
+  "source": null,
+  "featured": false
+ },
+ {
+  "name": "Gunpowder (black powder)",
+  "aliases": [
+   "gunpowder",
+   "black powder"
+  ],
+  "formula": null,
+  "kind": "mixture",
+  "composition": {
+   "O": 35.6,
+   "K": 29,
+   "C": 15,
+   "N": 10.4,
+   "S": 10
+  },
+  "atoms": null,
+  "note": "A historic mix of saltpeter, charcoal and sulfur. Shown for chemistry only.",
+  "source": null,
+  "featured": false
+ }
+]

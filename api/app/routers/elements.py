@@ -3,7 +3,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from ..db import get_db
-from ..models import Collection, Element, Family, User
+from ..models import Collection, Element, Family
 from ..schemas import CollectionOut, ElementDetail, ElementSummary, FamilyOut
 from ..security import current_user
 
@@ -47,9 +47,3 @@ def get_element(key: str, db: Session = Depends(get_db)) -> ElementDetail:
 @router.get("/collections", response_model=list[CollectionOut])
 def collections(db: Session = Depends(get_db)) -> list[Collection]:
     return list(db.scalars(select(Collection).order_by(Collection.sort_order, Collection.id)))
-
-
-@router.get("/stats/me")
-def my_stats(user: User = Depends(current_user)) -> dict[str, object]:
-    """Placeholder numbers for the home screen until milestone 3 adds cards and reviews."""
-    return {"explored": 0, "mastered": 0, "due_today": 0, "streak_days": 0}

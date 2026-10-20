@@ -48,6 +48,17 @@ body {
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 
+/* Search hits and finder matches pulse in their family color. */
+.eq-glow { animation: eq-glow 1.6s ease-in-out infinite; }
+@keyframes eq-glow { 50% { box-shadow: 0 0 0 3px var(--c), 0 0 18px var(--c); } }
+
+/* Electron shells orbit at different speeds. */
+.eq-orbit { transform-origin: 110px 110px; animation: eq-spin linear infinite; }
+@keyframes eq-spin { to { transform: rotate(360deg); } }
+
+@keyframes eq-shake { 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+.eq-shake { animation: eq-shake 0.35s; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }

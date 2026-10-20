@@ -90,7 +90,11 @@ class Material(Base):
     kind: Mapped[str] = mapped_column(String(16))  # element | compound | mixture
     # {"Fe": 98.0, "C": 2.0}: percent by mass
     composition: Mapped[dict[str, float]] = mapped_column(JSON)
+    # atoms per formula unit, e.g. {"H": 2, "O": 1}; null for mixtures
+    atoms: Mapped[dict[str, float] | None] = mapped_column(JSON)
     note: Mapped[str | None] = mapped_column(Text)
+    source: Mapped[str | None] = mapped_column(String(200))
+    featured: Mapped[bool] = mapped_column(Boolean, default=False)  # quick-tap example under the search box
 
 
 class SearchMiss(Base):

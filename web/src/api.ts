@@ -23,6 +23,16 @@ export interface ElementDetail extends ElementSummary {
 export interface Collection { slug: string; label: string; note: string; symbols: string[] }
 export interface MyStats { explored: number; mastered: number; due_today: number; streak_days: number }
 
+export interface Material {
+  id: number; name: string; aliases: string[]; formula: string | null; kind: "element" | "compound" | "mixture";
+  composition: Record<string, number>; atoms: Record<string, number> | null;
+  note: string | null; source: string | null; featured: boolean;
+}
+
+export interface Badge { code: string; label: string }
+export interface Explored { numbers: number[]; badges: Badge[] }
+export interface ExploreResult { new: boolean; explored_count: number; new_badges: Badge[] }
+
 export class ApiError extends Error {
   constructor(public status: number, message: string) { super(message); }
 }
@@ -51,5 +61,10 @@ export const api = {
   elements: () => request<ElementSummary[]>("/api/elements"),
   element: (key: string | number) => request<ElementDetail>(`/api/elements/${key}`),
   collections: () => request<Collection[]>("/api/collections"),
-  myStats: () => request<MyStats>("/api/stats/me"),
+  myStats: () => request<MyStats>("/api/me/stats"),
+  materials: () => request<Material[]>("/api/materials"),
+  explored: () => request<Explored>("/api/me/explored"),
+  explore: (n: number) => request<ExploreResult>(`/api/me/explored/${n}`, { method: "POST" }),
+  logMiss: (query: string) =>
+    request<void>("/api/search-misses", { method: "POST", body: JSON.stringify({ query }) }),
 };

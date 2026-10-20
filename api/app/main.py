@@ -4,7 +4,7 @@ from starlette.middleware.sessions import SessionMiddleware
 
 from .config import get_settings
 from .db import engine
-from .routers import auth, elements
+from .routers import auth, elements, materials, me
 
 settings = get_settings()
 
@@ -19,6 +19,8 @@ app.add_middleware(
 )
 app.include_router(auth.router)
 app.include_router(elements.router)
+app.include_router(materials.router)
+app.include_router(me.router)
 
 
 @app.get("/api/health", tags=["health"])

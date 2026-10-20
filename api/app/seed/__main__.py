@@ -13,7 +13,7 @@ from sqlalchemy.orm import Session
 
 from ..config import get_settings
 from ..db import SessionLocal
-from ..models import Collection, Element, ElementContent, Family, User
+from ..models import Collection, Element, ElementContent, Family, Material, User
 from ..security import hash_password
 
 DATA = Path(__file__).parent / "data"
@@ -47,6 +47,12 @@ def seed_reference(db: Session) -> dict[str, int]:
     for i, c in enumerate(_load("collections")):
         if c["slug"] not in have_col:
             db.add(Collection(sort_order=i, **c)); added["collections"] += 1
+
+    added["materials"] = 0
+    have_mat = set(db.scalars(select(Material.name)))
+    for m in _load("materials"):
+        if m["name"] not in have_mat:
+            db.add(Material(**m)); added["materials"] += 1
     return added
 
 

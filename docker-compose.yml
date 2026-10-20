@@ -26,6 +26,10 @@ services:
       ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD in .env}
       STUDENT_DEFAULT_PASSWORD: ${STUDENT_DEFAULT_PASSWORD:-elements}
       SEED_STUDENTS: ${SEED_STUDENTS:-soysauce:Soy Sauce,ketchupking:Ketchup King}
+      APP_TIMEZONE: ${APP_TIMEZONE:-America/Denver}
+      NEW_CARDS_PER_DAY: ${NEW_CARDS_PER_DAY:-20}
+      MASTERY_DAYS: ${MASTERY_DAYS:-21}
+      EASY_ANSWER_MS: ${EASY_ANSWER_MS:-4000}
     depends_on:
       db:
         condition: service_healthy
